@@ -1,52 +1,91 @@
-*{
+* {
     padding: 0;
     border: 0;
     font-family: inherit;
 }
-body{
-    background-color: #232323;
+body {
+    background-color: white;
 }
 /*--------estilos para el header-------------*/
-header{
+header {
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100px;
+    margin: auto;
 }
-div.header{
+div.header {
     height: 100px;
     display: flex;
     align-items: center;
-    gap: 500px;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* Limita el ancho máximo para pantallas grandes */
+    padding: 0 20px;   /* Espacio lateral */
 }
-img.header{
-    width: 100px;
+img.header {
+    width: 180px;
+    transition: width 0.4s ease; /* Transición para cambio de tamaño */
 }
-nav.header{
+nav.header {
     display: flex;
-    gap: 40px;
+    gap: 10px;
 }
-a.header{
+a.header {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
     color: black;
-    font-size: 20px;
+    font-size: 15px;
     border: 2px solid transparent;
-    padding: 5px;
-    transition: .4s ease;
+    padding: 15px;
+    transition: background-color 0.4s ease;
 }
-a:hover.header{
-    transition: .4s ease;
+a:hover.header {
     background-color: tomato;
 }
+/*--------estilos para el cuerpo informativo-------------*/
+.infoCuerpo{
+    background-color: #ede6e6;
+    display: flex;
+    gap: 20px; /* Espacio entre el texto y la imagen */
+    align-items: flex-start; /* Alinea los elementos arriba */
+    padding: 20px;
+}
+.info-body {
+    max-width: 600px; /* Limitar el ancho del texto para que no sea muy amplio */
+}
 
+.imagen-infobody {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+}
+
+img.cuerpo {
+    width: 100%;
+    max-width: 1200px;
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.estante{
+    background-color: whitesmoke;
+}
+.mostrador{
+    display: flex;
+    text-align: center;
+    line-height: 40px;
+    margin: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 /*--------estilos para el footer-------------*/
 .piePagina{
     width: 100%;
     background-color: #303c45;
 }
+
 .piePagina .group1{
     width: 100%;
     max-width: 1200px;
@@ -97,6 +136,48 @@ a:hover.header{
     color: #fff;
 }
 
+/*----- Responsivo para pantallas más pequeñas -----*/
+@media (max-width: 768px) {
+    div.header {
+        flex-direction: column; /* Coloca logo y menú en columna */
+        gap: 20px; /* Reduce el gap entre el logo y el menú */
+    }
+
+    img.header {
+        width: 150px; /* Redimensiona el logo en pantallas más pequeñas */
+    }
+
+    nav.header {
+        flex-direction: column; /* Cambia la dirección del menú a columna */
+        align-items: center;
+        gap: 5px; /* Reduce el gap entre los elementos del menú */
+    }
+
+    a.header {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+/*----- Ajustes para móviles más pequeños -----*/
+@media (max-width: 480px) {
+    div.header {
+        gap: 10px; /* Aún menos espacio entre logo y menú */
+    }
+
+    img.header {
+        width: 120px; /* Más pequeño en móviles */
+    }
+
+    nav.header {
+        gap: 3px; /* Espacio mínimo entre enlaces del menú */
+    }
+
+    a.header {
+        font-size: 12px; /* Texto más pequeño en enlaces */
+        padding: 8px;
+    }
+}
 /*---------configurar modo responsive--------------*/
 @media screen and (max-width:800px) {
     .piePagina .group1{
