@@ -64,9 +64,9 @@ a:hover.header {
 }
 
 img.cuerpo {
-    width: 100%;
+    width: 500px;
     max-width: 1200px;
-    height: auto; /* Mantiene la proporción de la imagen */
+    height: 500px; /* Mantiene la proporción de la imagen */
 }
 
 .estante{
