@@ -6,6 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="../CSS/index.css">
     <script src="https://kit.fontawesome.com/4a358270b7.js" crossorigin="anonymous"></script>
+    <!-- Aquí colocas la referencia al archivo index.js -->
+    <script src="../JS/index.js"></script>
 </head>
 <body>
     <header>
@@ -17,25 +19,58 @@
                 <a class="header" href="../HTML/productos.html">Productos</a>
                 <a class="header" href="../HTML/contacto.html">Contacto</a>
             </nav>
-          </div>
+        </div>
     </header>
     <div class="cuerpo">
-        <div class="publicidad">
-
-        </div>
-        <div class="infoCuerpo">
-            <div class="info-body">
-                <h2>Conócenos</h2>
-                <hr>
-                <h3>Bodegas y Viñedos Candela</h3>
-                <p>Bodega y Viñedos Candela S.A.C. continúa con una tradición familiar en una tierra que ha mantenido durante décadas un estrecho vínculo con el vino y la vid.</p>
-                <h4>Dirección:</h4>
-                <h4>Pasaje Piedras del Sol 1549 Urb. Inca Manco Capac San Juan de Lurigancho</h4>
-                <h4>Teléfono:</h4>
-                <h4>982671847</h4>
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img src="../imagenes/carrusel/image4.jpg" id="lastClone" alt="Imagen 4"> <!-- Clon de la última imagen -->
+                <img src="../imagenes/carrusel/image1.jpg" alt="Imagen 1">
+                <img src="../imagenes/carrusel/image2.jpg" alt="Imagen 2">
+                <img src="../imagenes/carrusel/image3.jpg" alt="Imagen 3">
+                <img src="../imagenes/carrusel/image4.jpg" id="firstClone" alt="Imagen 4"> <!-- Clon de la primera imagen -->
             </div>
+            <button id="prevBtn">❮</button>
+            <button id="nextBtn">❯</button>
+        </div>
+          
+        <div class="infoCuerpo">
             <div class="imagen-infobody">
-                <img class="cuerpo" src="../imagenes/fondos111.webp" alt="imagen de info principal">
+                <img class="cuerpo" src="../imagenes/info-inicio/imagen1.webp" alt="imagen de info principal">
+            </div>
+            <div class="info-body">
+                <h3>Mas Sobre Nosotros</h3>
+                <h2>Bodegas y Viñedos Candela</h2>
+                <p>Bodega y Viñedos Candela S.A.C. continúa con una tradición familiar en una tierra que ha mantenido durante décadas un estrecho vínculo con el vino y la vida.</p><br>
+                <h4>Dirección:</h4>
+                <p>Pasaje Piedras del Sol 1549 Urb. Inca Manco Capac San Juan de Lurigancho</p><br>
+                <h4>Teléfono:</h4>
+                <p>982671847</p>
+            </div>
+        </div>
+
+        <div class="infoCuerpo2">
+            <div class="info-body2">
+                <h3>Conoce más</h3>
+                <p>En Candela cada botella es un testimonio de nuestro compromiso con la calidad, utilizando métodos tradicionales y una fórmula secreta que se transmite de generación en generación</p><br>
+                <h4>Paladares con experiencia</h4>
+                <p>nuestros vinos ofrecen una complejidad única. Notas de fruta madura, especias y minerales se entrelazan en un baile delicado, revelando la profundidad de la tierra y la maestría del enólogo.</p><br>
+            </div>
+            <div class="imagen-infobody2">
+                <img class="cuerpo2" src="../imagenes/info-inicio/imagen2.jpg" alt="imagen de info principal">
+            </div>
+        </div>
+
+        <div class="infoCuerpo">
+            <div class="imagen-infobody">
+                <img id="otro-cuerpo" class="cuerpo" src="../imagenes/info-inicio/imagen3.jpg" alt="imagen de info principal">
+            </div>
+            <div class="info-body">
+                <h3>Candela te Acompaña</h3>
+                <h4>Publico entuciasta</h4>
+                <p>Si eres nuevo en el mundo del vino, Candela te abre las puertas a un universo de sabores. Te invitamos a explorar nuestras variedades, desde los tintos robustos hasta los blancos frescos y aromáticos.</p><br>
+                <h4>Comprueba y degusta</h4>
+                <p>No dudes en acercarte a nosotros para aprender más sobre el proceso de elaboración, las características de cada variedad y la magia que se esconde detrás de cada etiqueta.</p>
             </div>
         </div>
 

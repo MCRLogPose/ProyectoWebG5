@@ -2,6 +2,7 @@
     padding: 0;
     border: 0;
     font-family: inherit;
+    margin: 0;
 }
 body {
     background-color: white;
@@ -26,11 +27,6 @@ div.header {
 }
 img.header {
     width: 180px;
-    transition: width 0.4s ease; /* Transición para cambio de tamaño */
-}
-nav.header {
-    display: flex;
-    gap: 10px;
 }
 a.header {
     text-decoration: none;
@@ -43,32 +39,134 @@ a.header {
     transition: background-color 0.4s ease;
 }
 a:hover.header {
-    background-color: tomato;
+    background-color: rgb(255, 213, 213);
+    border: 2px solid rgb(222, 221, 221);
 }
-/*--------estilos para el cuerpo informativo-------------*/
-.infoCuerpo{
-    background-color: #ede6e6;
+/*--------estilos para el carrusel-------------*/
+.carousel-container {
+  width: 100%;
+  max-width: 100%;
+  height: 750px; /* Puedes ajustar la altura a tus necesidades */
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.carousel-slide {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+  width: 100%;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;  /* La imagen se ajustará completamente dentro del contenedor */
+}
+
+#prevBtn, #nextBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-90%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 10;
+}
+
+#prevBtn {
+  left: 10px;
+}
+
+#nextBtn {
+  right: 10px;
+}
+
+#prevBtn:hover, #nextBtn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+  
+/*--------estilos para el cuerpo informativo parte 1-------------*/
+.infoCuerpo {
+    margin-bottom: 100px;  /* Añade espacio en la parte inferior */
     display: flex;
-    gap: 20px; /* Espacio entre el texto y la imagen */
-    align-items: flex-start; /* Alinea los elementos arriba */
-    padding: 20px;
-}
-.info-body {
-    max-width: 600px; /* Limitar el ancho del texto para que no sea muy amplio */
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;    /* Espacio entre la imagen y el texto */
 }
 
 .imagen-infobody {
-    width: 100%;
-    max-width: 1200px;
-    height: auto;
+    flex: 1;    /* La imagen ocupará 1 parte del espacio */
+    display: flex;
+    justify-content: center;    /* Centra la imagen horizontalmente en su contenedor */
+    align-items: center;
 }
 
-img.cuerpo {
-    width: 500px;
-    max-width: 1200px;
-    height: 500px; /* Mantiene la proporción de la imagen */
+.imagen-infobody img {
+    max-width: 350px;    /* Ajustamos el tamaño */
+    width: 100%;    /* La imagen ocupará el 100% de su contenedor */
+    height: auto;    /* Mantiene la proporción de la imagen */
 }
 
+#otro-cuerpo{
+    max-width: 500px;    /* Ajustamos el tamaño */
+    width: 100%;    /* La imagen ocupará el 100% de su contenedor */
+    height: auto;    /* Mantiene la proporción de la imagen */
+}
+
+.info-body {
+    flex: 2;    /* El texto ocupará 2 partes del espacio */
+    max-width: 600px;    /* Ancho máximo del contenedor de texto */
+}
+
+h2, h3, p, h4 {
+    margin: 10px 0;    /* Espaciado entre los elementos de texto */
+    font-family: cursive;
+}
+
+.info-body h3, h4 {
+    color: rgb(194, 38, 90);
+}
+/*--------estilos para el cuerpo informativo parte 2-------------*/
+.infoCuerpo2 {
+    margin-bottom: 100px; /* Añade espacio en la parte inferior */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.info-body2 {
+    flex: 2;    /* El bloque de texto ocupa 2 partes del espacio */
+    max-width: 600px;    /* Ancho máximo del contenedor de texto */
+    padding-left: 50px;
+}
+
+.imagen-infobody2 {
+    flex: 1;    /* El bloque de la imagen ocupa 1 parte del espacio */
+    display: flex;
+    justify-content: center;    /* Centra la imagen horizontalmente */
+    align-items: center;    /* Centra la imagen verticalmente */
+}
+
+.imagen-infobody2 img {
+    max-width: 500px;    /* Ajusta este valor para hacer la imagen más pequeña */
+    width: 100%;    /* La imagen ocupará el 100% de su contenedor */
+    height: auto;    /* Mantiene la proporción de la imagen */
+}
+
+p {
+    margin-bottom: 15px;    /* Espacio entre párrafos */
+}
+.info-body2 h3{
+    color: rgb(194, 38, 90);
+}
+
+/*--------estilos para el cuerpo informativo parte 3-------------*/
 .estante{
     background-color: whitesmoke;
 }
