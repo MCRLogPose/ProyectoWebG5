@@ -24,11 +24,11 @@
     <div class="cuerpo">
         <div class="carousel-container">
             <div class="carousel-slide">
-                <img src="../imagenes/carrusel/image4.jpg" id="lastClone" alt="Imagen 4"> <!-- Clon de la última imagen -->
+                <!--<img src="../imagenes/carrusel/image4.jpg" id="lastClone" alt="Imagen 4"> <*-- Clon de la última imagen -->
                 <img src="../imagenes/carrusel/image1.jpg" alt="Imagen 1">
                 <img src="../imagenes/carrusel/image2.jpg" alt="Imagen 2">
                 <img src="../imagenes/carrusel/image3.jpg" alt="Imagen 3">
-                <img src="../imagenes/carrusel/image4.jpg" id="firstClone" alt="Imagen 4"> <!-- Clon de la primera imagen -->
+                <img src="../imagenes/carrusel/image4.jpg" alt="Imagen 4"> <!-- Clon de la primera imagen -->
             </div>
             <button id="prevBtn">❮</button>
             <button id="nextBtn">❯</button>
@@ -54,7 +54,7 @@
                 <h3>Conoce más</h3>
                 <p>En Candela cada botella es un testimonio de nuestro compromiso con la calidad, utilizando métodos tradicionales y una fórmula secreta que se transmite de generación en generación</p><br>
                 <h4>Paladares con experiencia</h4>
-                <p>nuestros vinos ofrecen una complejidad única. Notas de fruta madura, especias y minerales se entrelazan en un baile delicado, revelando la profundidad de la tierra y la maestría del enólogo.</p><br>
+                <p>Nuestros vinos ofrecen una complejidad única. Notas de fruta madura, especias y minerales se entrelazan en un baile delicado, revelando la profundidad de la tierra y la maestría del enólogo.</p><br>
             </div>
             <div class="imagen-infobody2">
                 <img class="cuerpo2" src="../imagenes/info-inicio/imagen2.jpg" alt="imagen de info principal">
@@ -79,30 +79,38 @@
             <div class="mostrador">
                 <div class="item">
                     <div class="image-oferta">
-                        <img src="../imagenes/borBlancaSeco.png" alt="vino blanca seco - oferta">
-                        <p class="descripcion">Vino Borgoña Blanca Seco</p>
-                        <span class="precio">S/ 20.00</span>
+                        <a id="item-selec" href="#">
+                            <img src="../imagenes/vinos-top/borBlancaSeco.png" alt="vino blanca seco">
+                            <p class="descripcion">Vino Borgoña Blanca Seco</p>
+                            <span class="precio">S/ 20.00</span>
+                        </a>
                     </div>
                 </div>
                 <div class="item">
                     <div class="image-oferta">
-                        <img src="../imagenes/borBlancaSemiseco.png" alt="vino blanca semiseco - oferta">
-                        <p class="descripcion">Vino Borgoña Blanca Semiseco</p>
-                        <span class="precio">S/ 20.00</span>
+                        <a id="item-selec" href="#">
+                            <img src="../imagenes/vinos-top/borBlancaSemiseco.png" alt="vino blanca semiseco">
+                            <p class="descripcion">Vino Borgoña Blanca Semiseco</p>
+                            <span class="precio">S/ 20.00</span>
+                        </a>
                     </div>
                 </div>
                 <div class="item">
                     <div class="image-oferta">
-                        <img src="../imagenes/borTintoSeco.png" alt="vino tinto seco - oferta">
-                        <p class="descripcion">Vino Borgoña Tinto Seco</p>
-                        <span class="precio">S/ 20.00</span>
+                        <a id="item-selec" href="#">
+                            <img src="../imagenes/vinos-top/borTintoSeco.png" alt="vino tinto seco">
+                            <p class="descripcion">Vino Borgoña Tinto Seco</p>
+                            <span class="precio">S/ 20.00</span>
+                        </a>
                     </div>
                 </div>
                 <div class="item">
                     <div class="image-oferta">
-                        <img src="../imagenes/borTintoSemiseco.png" alt="vino tinto semiseco - oferta">
-                        <p class="descripcion">Vino Borgoña Tinto Semiseco</p>
-                        <span class="precio">S/ 20.00</span>
+                        <a  id="item-selec" href="#">
+                            <img src="../imagenes/vinos-top/borTintoSemiseco.png" alt="vino tinto semiseco">
+                            <p class="descripcion">Vino Borgoña Tinto Semiseco</p>
+                            <span class="precio">S/ 20.00</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -117,11 +125,14 @@
             </div>
             <div class="box">
                 <h2 id="titleNosotros">Sobre nosotros</h2>
-                <p id="infoNosotros">Bodegas y Viñedos Candela SAC fue fundada en 1999 en el distrito de San Juan de Lurigancho,
-                     un valle que fue testigo durante la época colonial de la siembra de uva y la producción de vino en las diversas haciendas de este fértil valle de clima y tierras muy ricas.</p>
+                <p id="infoNosotros">
+                    Bodegas y Viñedos Candela SAC fue fundada en 1999 en el distrito de San Juan de Lurigancho,
+                    un valle que fue testigo durante la época colonial de la siembra de uva y la producción de vino
+                    en las diversas haciendas de este fértil valle de clima y tierras muy ricas.
+                </p>
             </div>
             <div class="box">
-                <h2 id="titleNosotros">Siguenos en:</h2>
+                <h2 id="titleNosotros">Síguenos en:</h2>
                 <div class="redSocial">
                     <a href="#" class="fa-brands fa-facebook"></a>
                     <a href="#" class="fa-brands fa-youtube"></a>
@@ -130,8 +141,8 @@
             </div>
         </div>
         <div class="group2">
-            <small>&copy;2024 <b>Bodega y veñedos Candela</b> - Todos los derechos reservados / Desarrollado por: ING Anonimos</small>
+            <small>&copy; 2024 <b>Bodega y Viñedos Candela</b> - Todos los derechos reservados / Desarrollado por: ING Anónimos</small>
         </div>
-    </footer>
+    </footer>    
 </body>
 </html>
