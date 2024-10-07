@@ -176,7 +176,6 @@ p {
     transition: background-color 0.4s ease;
 }
 .item:hover{
-
     border: 1px solid #ccc;
 }
 /*--------estilos para el footer-------------*/
