@@ -101,7 +101,7 @@ form{
     color: white;
 }
 body {
-    background: linear-gradient(150deg, rgb(241, 222, 183) 1%, rgb(230, 213, 213) 10%, rgb(204, 231, 215) 35%,rgb(231, 245, 238) 50%, rgb(204, 231, 215) 65%, rgb(229, 237, 240) 90%);
+    background: linear-gradient(150deg, rgb(241, 222, 183) 1%, rgb(230, 213, 213) 10%, rgb(186, 214, 197) 20%,rgb(231, 245, 238) 50%, rgb(189, 211, 198) 75%, rgb(241, 222, 183) 90%);
     margin: 0;
     padding: 0 150px;
 }
