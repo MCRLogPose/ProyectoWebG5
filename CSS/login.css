@@ -12,7 +12,7 @@ img {
 header {
     background-color: transparent;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     background-color: transparent;
 }
 div.header {
@@ -60,7 +60,6 @@ form{
     justify-content: center;
     color: rgb(255, 0, 0);
     margin-bottom: 30px;
-    
 }
 .caja{
     border-radius: 15px;
@@ -111,6 +110,28 @@ body {
 }
 #cajon{
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     font-size: 20px;
+    gap: 15px;
+}
+.btn{
+    justify-items: space-between;
+    color: black;
+    border-radius: 25px;
+    padding: 15px 65px;
+    background-color: #e53854;
+    border: 2px solid #E53854;
+}
+::placeholder{
+    color: #89879B;
+}
+.btn:hover{
+    background-color: #f33f5a;
+    border: 2px solid #f33f5a;
+}
+.formu{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    gap: 55px;
 }
