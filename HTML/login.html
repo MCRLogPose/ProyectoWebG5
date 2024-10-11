@@ -27,14 +27,15 @@
                 <input class="caja" type="text" name="nombre" placeholder="Nombre*">
                 <input class="caja" type="text" name="apellido" placeholder="Apellido Paterno*">
                 <input class="caja" type="text" name="apellido" placeholder="Apellido Materno*">
-                <input class="caja" type="text" name="dni" placeholder="DNI*">
+                <input class="caja" type="number" name="dni" placeholder="DNI*">
                 <input class="caja" type="email" name="correo" placeholder="Email*">
-                <input class="caja" type="text"name="telefono" placeholder="Numero de celular*">
-                <div id="ocupacion-texto">Ocupación</div><br>
+                <input class="caja" type="number"name="telefono" placeholder="Numero de celular*">
+                <input class="caja" type="text" name="contraseña" placeholder="Contraseña*">
+                <input class="caja" type="text" name=" conf contraseña" placeholder="Confirmar Contraseña*">
+                <div id="ocupacion-texto">Soy mayor de Edad:</div><br>
                 <div id="cajon">
-                    <input type="radio" name="ocupacion">Cliente
-                    <input type="radio" name="ocupacion">Vendedor
-                    <input type="radio" name="ocupacion">Administrador
+                    <input type="radio" name="mayor">Si
+                    <input type="radio" name="mayor">No
                 </div>
                 <br><br>
                 <div>
@@ -47,8 +48,9 @@
                         <option id="opcion" value="mujer">Mujer</option>
                         <option id="opcion" value="otros">Otros</option>
                     </select>
+                <div class="formu">
+                    <input class="btn" type="reset" value="Limpiar"><input class="btn" type="submit" value="Enviar">
                 </div>
-                <br>
             </form>
         </div> 
     </div>
