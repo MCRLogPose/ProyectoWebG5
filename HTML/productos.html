@@ -1,68 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link rel="stylesheet" type="text/css" href="../CSS/index.css">
     <link rel="stylesheet" type="text/css" href="../CSS/productos.css">
-    
+
     <script src="https://kit.fontawesome.com/4a358270b7.js" crossorigin="anonymous"></script>
+    <script src="../JS/funciones.js"></script>
 </head>
+
 <body>
     <header>
         <div class="header">
             <img class="header" src="../imagenes/logoImage.png" alt="logo de la bodega">
             <nav>
-                <ul>
-                    <li><a href="#inicio">INICIO</a></li>
-                    <li><a href="#nosotros">NOSOTROS</a></li>
-                    <li>
-                        <a href="#productos">PRODUCTOS</a>
-                        <ul class="submenu">
-                            <li><a href="#vinos-tintos">Vinos Tintos</a></li>
-                            <li><a href="#vinos-blancos">Vinos Blancos</a></li>
-                            <li><a href="#otros-productos">Otros Productos</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#contacto">CONTACTO</a></li>
-                </ul>
+                <a class="header" href="../HTML/index.html">Inicio</a>
+                <a class="header" href="../HTML/nosostros.html">Nosotros</a>
+                <a class="header" href="../HTML/productos.html">Productos</a>
+                <a class="header" href="../HTML/contacto.html">Contacto</a>
+                <a class="header" href="../HTML/login.html">Login</a>
             </nav>
         </div>
     </header>
-    <div class="estante">
-        <h3 id="title-estante">VINO TINTO</h3>
-        <div class="mostrador">
-            <div class="item">
-                <div class="image-oferta">
-                    <img class="imagen-pequena" src="../vinos tintos/20171500.jpg" alt="vino blanca seco - oferta">
-                    <p class="descripcion1">VINO TINTO BARBARESCO "CAMP GROS" DOCG - COSECHA 2017 - MAGNUM DE 1,5 LITROS</p>
-                    <span class="precio">S/1,500.00</span>
-                </div>
+    
+    <!-- Barra de búsqueda -->
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Buscar productos..." onkeyup="buscarProducto()">
+    </div>
+    
+    <!-- Estante de productos -->
+    <div class="product-grid" id="productGrid">
+        <div class="product-item" data-title="vino Borgoña Blanco Seco">
+            <a href="#">
+                <img src="../imagenes/vinos-productos/imagen1.jpg" alt="vinos-productos">
+                <h3>Borgoña Blanco Seco</h3>
+                <p class="price">S/25.00</p>
+            </a>
+        </div>
+        <div class="product-item" data-title="Vino Borgoña Tinto Semiseco">
+            <a href="#">
+                <img src="../imagenes/vinos-productos/imagen2.jpg" alt="vinos-productos">
+                <h3>Borgoña Tinto Semiseco</h3>
+                <p class="price">S/40.00</p>
+            </a>
+        </div>
+        <div class="product-item" data-title="Vino blanco Semiseco">
+            <a href="#">
+                <img src="../imagenes/vinos-productos/imagen3.jpg" alt="vinos-productos">
+                <h3>Vino Blanco Semiseco</h3>
+                <p class="price">S/45.00</p>
+            </a>
+        </div>
+        <div class="product-item" data-title="Vino Rosado Semiseco">
+            <a href="#">
+                <img src="../imagenes/vinos-productos/imagen4.jpg" alt="vinos-productos">
+                <h3>Vino Rosado Seco</h3>
+                <p class="price">S/40.00</p>
+            </a>
+        </div>
+        <div class="product-item" data-title="Vino Borgoña Tinto Seco">
+            <a href="#">
+                <img src="../imagenes/vinos-productos/imagen5.jpg" alt="vinos-productos">
+                <h3>Borgoña Tinto Seco</h3>
+                <p class="price">S/35.00</p>
+            </a>
+        </div>
+        
+        <!-- Agrega más productos aquí -->
+    </div>
+
+    <footer class="piePagina">
+        <div class="group1">
+            <div class="box">
+                <figure>
+                    <img class="footerImg" src="../imagenes/logoImage.png" alt="logo de la bodega">
+                </figure>
             </div>
-            <div class="item">
-                <div class="image-oferta">
-                    <img class="imagen-pequena" src="../vinos tintos/2020780.jpg" alt="vino blanca semiseco - oferta">
-                    <p class="descripcion1">VINO TINTO BARBARESCO "MARTINENGA" DOCG - COSECHA 2020 - MAGNUM DE 1,5 LITROS</p>
-                    <span class="precio">S/ 780.00</span>
-                </div>
+            <div class="box">
+                <h2 id="titleNosotros">Sobre nosotros</h2>
+                <p id="infoNosotros">
+                    Bodegas y Viñedos Candela SAC fue fundada en 1999 en el distrito de San Juan de Lurigancho,
+                    un valle que fue testigo durante la época colonial de la siembra de uva y la producción de vino
+                    en las diversas haciendas de este fértil valle de clima y tierras muy ricas.
+                </p>
             </div>
-            <div class="item">
-                <div class="image-oferta">
-                    <img class="imagen-pequena" src="../vinos tintos/2020412.jpg" alt="vino tinto seco - oferta">
-                    <p class="descripcion1">VINO TINTO BARBARESCO "MARTINENGA" DOCG - COSECHA 2020</p>
-                    <span class="precio">S/ 412.00</span>
-                </div>
-            </div>
-            <div class="item">
-                <div class="image-oferta">
-                    <img class="imagen-pequena" src="../vinos tintos/MonteAribaldo115.jpg" alt="vino tinto semiseco - oferta">
-                    <p class="descripcion1">VINO TINTO DOLCETTO DOC "MONTE ARIBALDO"</p>
-                    <span class="precio">S/ 115.00</span>
+            <div class="box">
+                <h2 id="titleNosotros">Síguenos en:</h2>
+                <div class="redSocial">
+                    <a href="#" class="fa-brands fa-facebook"></a>
+                    <a href="#" class="fa-brands fa-youtube"></a>
+                    <a href="#" class="fa-brands fa-whatsapp"></a>
                 </div>
             </div>
         </div>
-    </div>
-</div>
+        <div class="group2">
+            <small>&copy; 2024 <b>Bodega y Viñedos Candela</b> - Todos los derechos reservados / Desarrollado por: ING Anónimos</small>
+        </div>
+    </footer>
 </body>
+
 </html>

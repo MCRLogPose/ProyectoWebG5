@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+}
+/*--------estilos para el header-------------*/
+img {
+    width: 120px;
+    transition: width 0.4s ease; /* Transición para cambio de tamaño */
+} 
+
+header {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+div.header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+a.header {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: black;
+    font-size: 12px;
+    border-radius: 15px;
+    border-style: solid;
+    padding: 15px;
+    transition: background-color 0.4s ease;
+}
+a:hover{
+    background-color: tomato;
+}
+/*--------------------FOOTER--------------------*/
+.piePagina .group2{
+    background-color: transparent;
+    padding: 15px 10px;
+    text-align: center;
+    color: black;
+}
+/*------------FORMULARIO------------*/
+.formulario{
+    display: flex;
+    justify-content: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    background: linear-gradient(150deg,rgb(35, 35, 100) 5%,rgb(94, 46, 94) 30%, rgb(94, 46, 94) 70%, rgb(29, 25, 25) 95%);
+    border-radius: 25px;
+    width: 420px;
+}
+.registro{
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 0, 0);
+    margin-bottom: 30px;
+}
+.caja{
+    border-radius: 15px;
+    padding: 17px;
+    border: 1px solid red;
+    margin-bottom: 30px;
+    background-color: transparent;
+    color: white;
+    outline: none;
+}
+#fecha{
+    border-radius: 15px;
+    padding: 17px;
+    border: 1px solid red;
+    margin-bottom: 30px;
+    background-color: transparent;
+    outline: none;
+    font-size: 15px;
+}
+#genero{
+    border-radius: 15px;
+    padding: 15px 10px;
+    border: 1px solid red;
+    margin-bottom: 30px;
+    background-color: transparent;
+    outline: none;
+    color: black;
+    appearance: none;
+    backface-visibility: none;
+}
+#opcion{
+    background-color: orange;
+}
+.formulario-todo{
+    background-color: transparent;
+}
+#texto{
+    color: white;
+}
+body {
+    background: linear-gradient(150deg, rgb(241, 222, 183) 1%, rgb(230, 213, 213) 10%, rgb(186, 214, 197) 20%,rgb(231, 245, 238) 50%, rgb(189, 211, 198) 75%, rgb(241, 222, 183) 90%);
+    margin: 0;
+    padding: 0 150px;
+}
+#ocupacion-texto{
+    font-size: 20px;
+    color: white;
+}
+#cajon{
+    display: flex;
+    justify-content: left;
+    font-size: 20px;
+    gap: 15px;
+}
+.btn{
+    justify-items: space-between;
+    color: black;
+    border-radius: 25px;
+    padding: 15px 65px;
+    background-color: #e53854;
+    border: 2px solid #E53854;
+}
+::placeholder{
+    color: #89879B;
+}
+.btn:hover{
+    background-color: #f33f5a;
+    border: 2px solid #f33f5a;
+}
+.formu{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+}

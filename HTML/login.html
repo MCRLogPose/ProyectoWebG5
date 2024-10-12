@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../CSS/login.css" type="text/css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <nav>
+                <a class="header" href="../HTML/index.html">Inicio</a>
+                <a class="header" href="../HTML/nosostros.html">Nosotros</a>
+                <a class="header" href="../HTML/productos.html">Productos</a>
+                <a class="header" href="../HTML/contacto.html">Contacto</a>
+                <a class="header" href="../HTML/login.html">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="formulario-todo">
+        <div class="formulario">
+            <form action="">
+                <h2  class="registro">REGISTRO</h2>
+                <div id="texto" >DATOS:</div><br>
+                <input class="caja" type="text" name="nombre" placeholder="Nombre*">
+                <input class="caja" type="text" name="apellido" placeholder="Apellido Paterno*">
+                <input class="caja" type="text" name="apellido" placeholder="Apellido Materno*">
+                <input class="caja" type="number" name="dni" placeholder="DNI*">
+                <input class="caja" type="email" name="correo" placeholder="Email*">
+                <input class="caja" type="number"name="telefono" placeholder="Numero de celular*">
+                <input class="caja" type="text" name="contraseña" placeholder="Contraseña*">
+                <input class="caja" type="text" name=" conf contraseña" placeholder="Confirmar Contraseña*">
+                <div id="ocupacion-texto">Soy mayor de Edad:</div><br>
+                <div id="cajon">
+                    <input type="radio" name="mayor">Si
+                    <input type="radio" name="mayor">No
+                </div>
+                <br><br>
+                <div>
+                    <div id="texto">Fecha de Nacimiento:</div><br>
+                    <input id="fecha" type="date" name="fecha">
+                    <div id="texto">Género</div><br>
+                    <select id="genero" name="sexo">
+                        <option id="opcion" value="seleccion" disabled selected>-------seleccionar-------</option>
+                        <option id="opcion" value="hombre">Hombre</option>
+                        <option id="opcion" value="mujer">Mujer</option>
+                        <option id="opcion" value="otros">Otros</option>
+                    </select>
+                <div class="formu">
+                    <input class="btn" type="reset" value="Limpiar"><input class="btn" type="submit" value="Registrar">
+                </div>
+            </form>
+        </div> 
+    </div>
+    <footer class="piePagina"> 
+       <div class="group2">
+            <small>&copy;2024 <b>Bodega y veñedos Candela</b> - Todos los derechos reservados / Desarrollado por: ING Anonimos</small>
+        </div>   
+    </footer>
+</body>
+</html>

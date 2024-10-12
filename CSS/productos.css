@@ -1,117 +1,60 @@
-/* Estilos generales */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
-/* Menú de navegación */
-nav {
-    background-color: #fff; /* Fondo blanco */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
-}
-
-nav ul {
-    list-style-type: none;
+* {
     padding: 0;
+    border: 0;
+    font-family: inherit;
     margin: 0;
-    display: flex;
-    justify-content: center; /* Centra el menú */
+}
+.search-bar {
+    margin-bottom: 20px;
 }
 
-nav ul li {
-    position: relative; /* Necesario para el submenú */
-    margin: 0 20px; /* Espacio entre las opciones del menú */
-}
-
-nav ul li a {
-    text-decoration: none;
-    padding: 15px 20px; /* Espaciado alrededor de los enlaces */
-    display: block;
-    font-weight: bold;
-    color: #000; /* Color del texto */
-}
-
-nav ul li a:hover {
-    color: #8B0000; /* Color al pasar el ratón por encima */
-}
-
-/* Estilo del submenú */
-.submenu {
-    display: none; /* Ocultar submenú por defecto */
-    position: absolute;
-    top: 100%; /* Alinea el submenú debajo del elemento padre */
-    left: 0;
-    background-color: #fff;
-    padding: 0;
-    list-style-type: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
-    z-index: 1000; /* Para que el submenú esté por encima de otros elementos */
-}
-
-.submenu li {
-    width: 200px; /* Ajusta el ancho del submenú */
-}
-
-.submenu li a {
-    padding: 10px;
-    display: block;
-    color: #000;
-}
-
-.submenu li a:hover {
-    background-color: #f0f0f0; /* Color de fondo al pasar el ratón por encima */
-}
-
-/* Mostrar el submenú al pasar el ratón */
-nav ul li:hover .submenu {
-    display: block;
-}
-
-/* Estilos para los productos */
-.imagen-pequena {
-    width: 95px;
-    height: 430px;
-    object-fit: cover;
-}
-
-.estante {
-    text-align: center;
-    margin: 20px;
-}
-
-.mostrador {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.item {
+.search-bar input {
     width: 300px;
-    margin: 20px;
+    padding: 10px;
+    font-size: 16px;
 }
 
-.image-oferta {
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product-item {
+    border: 1px solid #ccc;
+    padding: 10px;
     text-align: center;
 }
 
-.imagen-ajustada {
-    width: 95px;
-    height: 430px;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto;
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
 }
 
-.descripcion1 {
-    font-family: 'Arial', sans-serif;
-    font-size: 14px;
-    color: #333;
-    margin-top: 10px;
+.product-item h3 {
+    font-size: 18px;
+    margin: 10px 0;
 }
 
-.precio {
+.product-item p {
+    font-size: 16px;
+    color: #888;
+}
+
+.price {
+    font-size: 20px;
     font-weight: bold;
-    color: #000;
-    margin-top: 5px;
+    color: #333;
+}
+
+.product-item a {
+    text-decoration: none;
+    color: inherit;
     display: block;
+    transition: border .04s ease;
+}
+
+.product-item a:hover {
+    border: 3px solid transparent;
 }

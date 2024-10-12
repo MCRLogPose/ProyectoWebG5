@@ -5,23 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/4a358270b7.js" crossorigin="anonymous"></script>
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/index.css">
     <link rel="stylesheet" type="text/css" href="../CSS/contacto.css">
+    
 </head>
 <body>
     <header>
         <div class="header">
-            <img src="../imagenes/logoImage.png" alt="logo de la bodega">
-            
-        </div>
-        <div>
+            <img class="header" src="../imagenes/logoImage.png" alt="logo de la bodega">
             <nav>
                 <a class="header" href="../HTML/index.html">Inicio</a>
                 <a class="header" href="../HTML/nosostros.html">Nosotros</a>
                 <a class="header" href="../HTML/productos.html">Productos</a>
                 <a class="header" href="../HTML/contacto.html">Contacto</a>
+                <a class="header" href="../HTML/login.html">Login</a>
             </nav>
         </div>
     </header>
+
     <div class="mesa">
         <img id="contacto1" src="../imagenes/botella-vino-dos-vasos-uvas-sobre-mesa_1340-23317.avif" 
         alt="fondo de pantalla vino">          
@@ -31,32 +32,56 @@
             <p>El clásico Vino Tinto Semiseco elaborado con las mejores uvas borgoñas del valle de Cañete, sienta el aroma y sabor de las uvas en cada copa de vino</p>
         </div>
     </div>
-
     <div class="contenedor">
-
         <div class="columna">
-            <img src="../imagenes/Celular.jpg" alt="Fondo de Celular">
+            <div>
+                <a href="#" id="logos">
+                    <img id="celular" src="../imagenes/Celular.jpg" alt="Fondo de Celular">
+                </a>
+            </div>
             <p>Teléfono</p>
             <h5>982671847</h5>
             <h5>informes@vinoscandela.com</h5>
         </div>
-
         <div class="columna">
-            <img id="email" src="../imagenes/Dirección.avif" alt="Fondo de Dirección">
+            <div>
+                <a href="#" id="logos">
+                    <img id="direccion" src="../imagenes/dic.png" alt="Fondo de Dirección">
+                </a>
+            </div>
             <p>Dirección</p>
             <h5>Pasaje Piedras del Sol 1549</h5>
             <h5>Urb. Inca Manco Capac San Juan de Lurigancho</h5>
         </div>
-
         <div class="columna">
-            <img src="../imagenes/Email.jpg" alt="Fondo de Email">
+            <div>
+                <a href="#" id="logos">
+                    <img id="email" src="../imagenes/Email.jpg" alt="Fondo de Email">
+                </a>
+            </div>
             <p>Horario de atención</p>
             <h5>Lunes - Sabado: 9 am - 9 pm</h5>
             <h5>Domingos: Cerrado</h5>
         </div>
-
     </div>
-
+    <div class="formulario">
+        <div>
+            <h3 id="titulo1">Contáctenos</h3>
+            <h1 id="titulo2">Escribenos tus dudas o consultas aquí</h1>
+        </div>
+        <div>
+            <img src="../imagenes/copas.jpg" alt="copa de vino">
+        <div>
+            <form action="">
+                <input id="caja" type="text" name="nombre" placeholder="Nombre*">
+                <input id="caja" type="email" name="email" placeholder="Email*">
+                <br>
+                <textarea name="comentarios" id="caja" rows="5" cols="55" placeholder="Escribe tus comentarios aquí*"></textarea>
+                <br>
+                <button id="btn" type="submit">Enviar</button>
+            </form>
+        </div>    
+    </div>
     <footer class="piePagina">
         <div class="group1">
             <div class="box">
@@ -66,11 +91,14 @@
             </div>
             <div class="box">
                 <h2 id="titleNosotros">Sobre nosotros</h2>
-                <p id="infoNosotros">Bodegas y Viñedos Candela SAC fue fundada en 1999 en el distrito de San Juan de Lurigancho,
-                     un valle que fue testigo durante la época colonial de la siembra de uva y la producción de vino en las diversas haciendas de este fértil valle de clima y tierras muy ricas.</p>
+                <p id="infoNosotros">
+                    Bodegas y Viñedos Candela SAC fue fundada en 1999 en el distrito de San Juan de Lurigancho,
+                    un valle que fue testigo durante la época colonial de la siembra de uva y la producción de vino
+                    en las diversas haciendas de este fértil valle de clima y tierras muy ricas.
+                </p>
             </div>
             <div class="box">
-                <h2 id="titleNosotros">Siguenos en:</h2>
+                <h2 id="titleNosotros">Síguenos en:</h2>
                 <div class="redSocial">
                     <a href="#" class="fa-brands fa-facebook"></a>
                     <a href="#" class="fa-brands fa-youtube"></a>
@@ -79,7 +107,7 @@
             </div>
         </div>
         <div class="group2">
-            <small>&copy;2024 <b>Bodega y veñedos Candela</b> - Todos los derechos reservados / Desarrollado por: ING Anonimos</small>
+            <small>&copy; 2024 <b>Bodega y Viñedos Candela</b> - Todos los derechos reservados / Desarrollado por: ING Anónimos</small>
         </div>
     </footer>
 </body>
