@@ -20,13 +20,13 @@ body {
 }
 .texto-mesa{
     position: absolute;
-    top: 50%; /* Centra verticalmente */
-    left: 50%; /* Centra horizontalmente */
-    transform: translate(-50%, -50%); /* Ajuste para centrar completamente */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
     font-size: 24px;
     font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra de texto para mejor legibilidad */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     text-align: left;
 }
 /*-----------------------CUERPO DE LOS CONTACTOS-----------------------*/
@@ -35,39 +35,46 @@ body {
     justify-content: center;
 }
 .columna{
-    padding: 0 170px;
+    padding: 3px 170px;
     text-align: center;
 }
 .contenedor img{
     width: 80px;
 }
-/*-----------------------FIGURAS DE CONTACTO-----------------------*/
-#email{
-    width: 50px;
-    height: 35px;
-    padding-top: 35px;
+#contacto1{
+    margin-bottom: 20px;
 }
+/*-----------------------FIGURAS DE CONTACTO-----------------------*/
 #celular{
-    width: 40px;
-    height: 60px;
-    padding-top: 15px;
+    width: 80px;
+    height: 80px;
+    margin-top:  5px;
 }
 #direccion{
     width: 45px;
-    height: 60px;
-    padding-top: 15px;
+    height: 50px;
+    margin: 10px;
+}
+#email{
+    width: 50px;
+    height: 35px;
+    margin: 20px;
+}
+#logos{
+    background-color: transparent;
 }
 #logos:hover{
-    border: 2px solid blue;
+    border: 1px solid red;
+    background-color: red;
+    transition: 1.5s;
 }
-
-
 /*-------------------FORMULARIO-------------------*/
 .formulario{
     display: grid;
     grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(1,150px);
+    grid-template-rows: repeat(2,90px);
     justify-items: center;
+    margin-top: 15px;
 }
 #titulo1{
     color: red;
@@ -76,7 +83,11 @@ body {
 }
 #titulo2{
     font-size: 37px;
-    padding: 12px;
+    padding: 5px 12px;
+}
+#copas{
+    width: 100px;
+    height: 100px;
 }
 #caja{
     border-radius: 15px;
@@ -100,4 +111,5 @@ body {
     background-color: #c9c0bb;
     border: 2px solid #333333;
     color: white;
+    transition: 1s;
 }
