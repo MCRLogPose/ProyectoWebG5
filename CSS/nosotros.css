@@ -4,28 +4,41 @@
 body{
     /* background-color: #f5f5f5; */
     background-color: white;
-
+    /*Borgoña (#800020)
+    Vino tinto (#8B0000)
+    Rojo oscuro (#B22222)*/
 }
-/* .container{
-    width:700px; Limita el ancho máximo del contenido
-    margin: 0 ; 0 auto:Centra el contenido
-    padding: 10px;
-    text-align: left; Asegura que todo esté alineado a la izquierda
-} */
 
+/* img{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);    
+} */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'Qwitcher Grypen';
+    src: url('../fonts/QwitcherGrypen-Bold.woff2') format('woff2'),
+         url('../fonts/QwitcherGrypen-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
 h2{
-    text-align: right;
+    font-family: monospace;
 }
 h4{
-    font-family: 'Courier New', Courier, monospace;
+    /* font-family: 'Great Vibes', cursive; */
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Qwitcher Grypen', cursive;
     text-align: left;
+    font-size: 48px;
 }
 h1{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #800020;
+    font-family: monospace;
     text-align: left;
 }
 p{
-    font-family: 'Times New Roman', Times, serif;
+    font-family:cursive;
     text-align: justify; /* Justifica el texto */
     line-height: 1.6; /* Espaciado entre líneas */
     text-align: left;
@@ -39,6 +52,8 @@ p{
     align-items: center;
     padding: 40px 10px;
     position: relative;
+    grid-row: 2;
+    grid-column: 1/span 2;
   }
   
   .timeline-container::before {
@@ -65,7 +80,8 @@ p{
   .timeline-date {
     font-size: 24px;
     font-weight: bold;
-    background-color: aquamarine;
+    color: rgb(194, 38, 90);;
+    background-color: white;
     border: 2px solid #333;
     border-radius: 50%;
     width: 60px;
@@ -88,28 +104,53 @@ p{
 /* ------  FIN -----------*/
 /* Estilos para el contenido central */
 .medio {
-    position: relative;
-    margin: 0 auto;
+    gap: 20px;
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: 1fr 1fr;/*misma dimension de columnas*/
+    grid-template-rows: auto auto auto auto auto;
 }
+.gridImagen{
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+    max-width: 100%;
+}
+/* .gridImagen img {
+    max-width: 100%; Limitar el tamaño de la imagen
+    height: auto; Mantener la proporción de la imagen
+    object-fit: contain; Ajustar la imagen dentro del contenedor sin deformarla
+    box-sizing: border-box; Incluir padding y border dentro del ancho
+} */
 
-.container {
-    padding: 10px 40px;
-    position: relative;
-    width: 50%;
-}
-.left {
-    width: 650px;
-    left: 0;
-}
-
-.right {
-    width: 650px;
-    left: 50%;
-}
-.content {
+.Mision{
+    grid-column: 1 / span 2; /* Ocupa ambas columnas */
+    grid-row: 3; /* Tercera fila */
     padding: 20px;
-    background-color: rgb(40, 24, 190);
-    position: relative;
+    background-color: white;
+    border-radius: 6px;
+}
+.Vision{
+    grid-column: 1 / span 2; /* Ocupa ambas columnas */
+    grid-row: 4; /* Cuarta fila */
+    padding: 20px;
+    background-color: white;
+    border-radius: 6px;
+}
+.Valores{
+    grid-column: 1 / span 2; /* Ocupa ambas columnas */
+    grid-row: 5; /* Quinta fila */
+    padding: 20px;
+    background-color: white;
+    border-radius: 6px;
+}
+.Historia{
+    grid-column: 1;
+    grid-row: 1;
+    margin: 20px;
+    padding: 10px;
+    background-color:white;
     border-radius: 6px;
 }
 #centro{
@@ -136,6 +177,59 @@ p{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra de texto para mejor legibilidad */
     text-align: center;
 }
+/*--------estilos para el footer-------------*/
+.piePagina {
+    background-color: #222; 
+    color: white;
+    padding: 40px 20px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.group1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Hacer que los elementos se ajusten en pantallas pequeñas */
+    margin-bottom: 20px;
+}
+.box {
+    flex: 1;
+    min-width: 250px; /* Asegura que las cajas no sean demasiado pequeñas en pantallas más chicas */
+    padding: 0 20px;
+    text-align: left;
+}
+.box h2 {
+    color: #f9f9f9;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.box p {
+    color: #ccc; /* Color de texto más suave */
+    font-size: 14px;
+}
+
+.redSocial {
+    display: flex;
+    gap: 15px; /* Espacio entre los iconos de redes sociales */
+}
+.redSocial a {
+    font-size: 24px;
+    color: white;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+.redSocial a:hover {
+    color: #ddd; /* Cambio de color al pasar el cursor por encima */
+}
+.footerImg {
+    max-width: 200px; /* Ajusta el tamaño del logo */
+}
+.group2 {
+    text-align: center;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    font-size: 12px;
+    color: #ccc;
+}
 /*--------estilos para el header-------------*/
 header {
     background-color: white;
@@ -143,7 +237,6 @@ header {
     justify-content: center;
     align-items: center;
     height: 100px;
-    width: 100%;
     margin: auto;
 }
 div.header {
@@ -156,78 +249,19 @@ div.header {
     padding: 0 20px;   /* Espacio lateral */
 }
 img.header {
-    width: 180px;
-    transition: width 0.4s ease; /* Transición para cambio de tamaño */
-}
-nav.header {
-    display: flex;
-    gap: 10px;
+    width: 150px;
+    padding-left: 50px;
 }
 a.header {
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 500;
     color: black;
     font-size: 15px;
     border: 2px solid transparent;
-    padding: 15px;
+    padding: 18px;
     transition: background-color 0.4s ease;
 }
 a:hover.header {
-    background-color: tomato;
-}
-/*--------estilos para el footer-------------*/
-.piePagina{
-    width: 100%;
-    background-color: #303c45;
-}
-
-.piePagina .group1{
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    padding: 45px 0px;
-}
-.piePagina .group1 image{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.piePagina .group1 image .footerImg{
-    width: 250px;
-}
-.piePagina .group1 .box #titleNosotros{
-    color: #fff;
-    margin-bottom: 25px;
-    font-size: 20px;
-}
-.piePagina .group1 .box #infoNosotros{
-    color: #efefef;
-    margin-bottom: 10px;
-}
-.piePagina .group1 .box .redSocial a{
-    display: inline-block;
-    text-decoration: none;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    margin-right: 10px;
-    background-color: #77777a;
-    text-align: center;
-    transition: .4s ease;
-}
-.piePagina .group1 .box .redSocial a:hover{
-    transition: .4s ease;
-    background-color: tomato;
-}
-.piePagina .group2{
-    background-color: #283239;
-    padding: 15px 10px;
-    text-align: center;
-    color: #fff;
+    color: rgb(194, 38, 90);
 }
