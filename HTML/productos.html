@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="../CSS/index.css">
     <link rel="stylesheet" type="text/css" href="../CSS/productos.css">
@@ -32,12 +35,13 @@
     </div>
     
     <!-- Estante de productos -->
-    <div class="product-grid" id="productGrid">
+    <div  class="product-grid" id="productGrid">
         <div class="product-item" data-title="vino Borgoña Blanco Seco">
             <a href="#">
                 <img src="../imagenes/vinos-productos/imagen1.jpg" alt="vinos-productos">
                 <h3>Borgoña Blanco Seco</h3>
                 <p class="price">S/25.00</p>
+                <button class="add-to-cart">Agregar al carrito</button>
             </a>
         </div>
         <div class="product-item" data-title="Vino Borgoña Tinto Semiseco">
@@ -45,6 +49,7 @@
                 <img src="../imagenes/vinos-productos/imagen2.jpg" alt="vinos-productos">
                 <h3>Borgoña Tinto Semiseco</h3>
                 <p class="price">S/40.00</p>
+                <button class="add-to-cart">Agregar al carrito</button>
             </a>
         </div>
         <div class="product-item" data-title="Vino blanco Semiseco">
@@ -52,6 +57,7 @@
                 <img src="../imagenes/vinos-productos/imagen3.jpg" alt="vinos-productos">
                 <h3>Vino Blanco Semiseco</h3>
                 <p class="price">S/45.00</p>
+                <button class="add-to-cart">Agregar al carrito</button>
             </a>
         </div>
         <div class="product-item" data-title="Vino Rosado Semiseco">
@@ -59,6 +65,7 @@
                 <img src="../imagenes/vinos-productos/imagen4.jpg" alt="vinos-productos">
                 <h3>Vino Rosado Seco</h3>
                 <p class="price">S/40.00</p>
+                <button class="add-to-cart">Agregar al carrito</button>
             </a>
         </div>
         <div class="product-item" data-title="Vino Borgoña Tinto Seco">
@@ -66,28 +73,31 @@
                 <img src="../imagenes/vinos-productos/imagen5.jpg" alt="vinos-productos">
                 <h3>Borgoña Tinto Seco</h3>
                 <p class="price">S/35.00</p>
+                <button class="add-to-cart">Agregar al carrito</button>
             </a>
         </div>
-        
-       <div class="product-item" data-title="Marques de cáceres">
+        <div class="product-item" data-title="Marques de cáceres">
             <a href="#">
                 <img src="../imagenes/vinos-productos/imagen6.jpg" alt="vinos-productos">
-                <h3>Vino Rosé Marques de Cáceres</h3>
+                <h3>Vino Rosé</h3>
                 <p class="price">S/ 51.90</p>
+                <button class="add-to-cart">Agregar al carrito</button>
             </a>
         </div>
         <div class="product-item" data-title="Caballo loco">
             <a href="#">
                 <img src="../imagenes/vinos-productos/imagen7.jpeg" alt="vinos-productos">
-                <h3>Vino Caballo Loco </h3>
-                <p class="price">S/209.90</p>
+                <h3>Vino Caballo Loco</h3>
+                <p class="price">S/210</p>
+                <button class="add-to-cart">Agregar al carrito</button>
             </a>
         </div>
         <div class="product-item" data-title="Fuzion">
             <a href="#">
                 <img src="../imagenes/vinos-productos/imagen8.jpg" alt="vinos-productos">
                 <h3>Vino Tinto FUZION Shiraz Malbec</h3>
-                <p class="price">S/29.90</p>
+                <p class="price">S/30.00</p>
+                <button class="add-to-cart">Agregar al carrito</button>
             </a>
         </div>
         <div class="product-item" data-title="San Julia">
@@ -95,6 +105,7 @@
                 <img src="../imagenes/vinos-productos/imagen9.jpg" alt="vinos-productos">
                 <h3>Vino Rosé SANTA JULIA</h3>
                 <p class="price">S/44.00</p>
+                <button class="add-to-cart">Agregar al carrito</button>
             </a>
         </div>
         <div class="product-item" data-title="Borgoña">
@@ -102,6 +113,7 @@
                 <img src="../imagenes/vinos-productos/imagen10.jpg" alt="vinos-productos">
                 <h3>Vino Borgoña blanco semiseco</h3>
                 <p class="price">S/13.00</p>
+                <button class="add-to-cart">Agregar al carrito</button>
             </a>
         </div>
 
@@ -110,6 +122,7 @@
                 <img src="../imagenes/vinos-productos/imagen11.jpg" alt="vinos-productos">
                 <h3>Vino Velásquez Semi Seco</h3>
                 <p class="price">S/38.50</p>
+                <button class="add-to-cart">Agregar al carrito</button>
             </a>
         </div>
         <div class="product-item" data-title="Vino Gran Mistura">
@@ -117,11 +130,68 @@
                 <img src="../imagenes/vinos-productos/imagen12.jpg" alt="vinos-productos">
                 <h3>Vino Gran Mistura</h3>
                 <p class="price">S/18.50</p>
+                <button class="add-to-cart">Agregar al carrito</button>
             </a>
         </div>
-    </div>
-    </div>
+        <!-- carrito de compra -->
+        <div class="carrito"> 
+            <div class="header-carrito">
+                <h2 >Tu Carrito</h2>
+            </div>
+           
+         <div class="carrito-items">
+            
+         </div>   
 
+        <!--
+
+        <div class="carrito-items">
+            <div class="carrito-item">
+             <img src="../imagenes/vinos-productos/imagen1.jpg" alt="" width="80px">
+             <div class="carrito-item-detalles">
+                <span class="carrito-item-titulo">Borgoña Blanco Seco</span>
+                <div class="selector-cantidad">
+                    <i class="fa-solid fa-minus restar-cantidad"></i>
+                    <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                    <i class="fa-solid fa-plus sumar-cantidad"></i>
+                </div>
+                <span class="carrito-item-precio">S/25.00</span>
+             </div>
+             <button class="btn-eliminar">
+                <i class="fa-solid fa-trash"></i>
+             </button>
+
+            </div>
+        </div>
+        <div class="carrito-items">
+            <div class="carrito-item">
+             <img src="../imagenes/vinos-productos/imagen2.jpg" alt="" width="80px">
+             <div class="carrito-item-detalles">
+                <span class="carrito-item-titulo">Borgoña Tinto Semiseco</span>
+                <div class="selector-cantidad">
+                    <i class="fa-solid fa-minus restar-cantidad"></i>
+                    <input type="text" value="2" class="carrito-item-cantidad" disabled>
+                    <i class="fa-solid fa-plus sumar-cantidad"></i>
+                </div>
+                <span class="carrito-item-precio">S/40.00</span>
+             </div>
+             <button class="btn-eliminar"><i class="fa-solid fa-trash"></i> </button>
+
+            </div>
+        </div>
+    -->
+
+        <div class="carrito-total">
+            <div class="fila">
+                <strong>Tu Total </strong>
+                <span class="carrito-precio-total">
+                    S/65.00
+                </span>
+            </div>
+            <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i></button>
+        </div>
+    </div>
+</div>   
     <footer class="piePagina">
         <div class="group1">
             <div class="box">
