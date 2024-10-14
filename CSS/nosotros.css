@@ -31,9 +31,12 @@ h4{
     font-family: 'Qwitcher Grypen', cursive;
     text-align: left;
     font-size: 48px;
+    margin: 0;
+    
 }
 h1{
-    color: #800020;
+    /* color: #800020; */
+    color: #b22222;
     font-family: monospace;
     text-align: left;
 }
@@ -42,7 +45,6 @@ p{
     text-align: justify; /* Justifica el texto */
     line-height: 1.6; /* Espaciado entre líneas */
     text-align: left;
-
 }
 
 /* ------ Estilos para la linea del tiempo -----------*/
@@ -52,19 +54,23 @@ p{
     align-items: center;
     padding: 40px 10px;
     position: relative;
-    grid-row: 2;
+    grid-row: 3;
     grid-column: 1/span 2;
+    gap: 20px;
   }
   
   .timeline-container::before {
     content: '';
     position: absolute;
     top: 50%; /* Centra la línea */
+    /* left: 120px;
+    width: 80%; */
     left: 10px;
-    width: 80%;
+    width: 90%;
     height: 2px; /* Grosor de la línea */
     background-color: #333; /* Color de la línea */
-    z-index: -1; /* La línea va detrás de los elementos */
+    /* z-index: 1; */
+    z-index: 0;
   }
   
   .timeline-item {
@@ -103,60 +109,111 @@ p{
   }
 /* ------  FIN -----------*/
 /* Estilos para el contenido central */
+.headCuerpo{
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    padding: 40px 0;
+    text-align: center;
+}
+.subTitle {
+    font-family: 'Qwitcher Grypen', cursive;
+    font-size: 28px;
+    color: #B22222; /* Color del subtítulo */
+    margin-bottom: 5px;
+}
+.decoracion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.linea {
+    display: inline-block;
+    width: 80px; /* Largo de las líneas */
+    height: 1px;
+    background-color: #B22222; /* Color de las líneas */
+    margin: 0 10px;
+}
 .medio {
     gap: 20px;
     display: grid;
     max-width: 100%;
     grid-template-columns: 1fr 1fr;/*misma dimension de columnas*/
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto; 
+    /* background-color: #FAF5EF; */
+    background-color: white;
 }
 .gridImagen{
     grid-column: 2;
-    grid-row: 1;
+    grid-row: 2;
     justify-self: center;
     align-self: center;
     max-width: 100%;
 }
-/* .gridImagen img {
-    max-width: 100%; Limitar el tamaño de la imagen
-    height: auto; Mantener la proporción de la imagen
-    object-fit: contain; Ajustar la imagen dentro del contenedor sin deformarla
-    box-sizing: border-box; Incluir padding y border dentro del ancho
-} */
 
 .Mision{
     grid-column: 1 / span 2; /* Ocupa ambas columnas */
-    grid-row: 3; /* Tercera fila */
+    grid-row: 4; /* Tercera fila */
     padding: 20px;
     background-color: white;
     border-radius: 6px;
 }
 .Vision{
     grid-column: 1 / span 2; /* Ocupa ambas columnas */
-    grid-row: 4; /* Cuarta fila */
+    grid-row: 5; /* Cuarta fila */
     padding: 20px;
     background-color: white;
     border-radius: 6px;
 }
 .Valores{
     grid-column: 1 / span 2; /* Ocupa ambas columnas */
-    grid-row: 5; /* Quinta fila */
+    grid-row: 6; /* Quinta fila */
     padding: 20px;
     background-color: white;
     border-radius: 6px;
 }
+/*Verde oliva suave (#556B2F) o Dorado apagado (#D4AF37)*/
+.tarjetas-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Repartimos las columnas */
+    gap: 20px;
+    padding: 20px;
+}
+.tarjeta {
+    background-color: #faf5ef;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.3s ease;
+}
+.tarjeta img {
+    max-width: 80px; /* Tamaño del icono */
+}
+.tarjeta:hover {
+    transform: translateY(-10px); /* Efecto hover para resaltar las tarjetas */
+}
+.tarjeta h3 {
+    font-size: 20px;
+    color: #b22222; /* Color relacionado con el vino */
+    margin-bottom: 10px;
+}
+.tarjeta p {
+    font-size: 16px;
+    color: #666;
+}
 .Historia{
     grid-column: 1;
-    grid-row: 1;
+    grid-row: 2;
     margin: 20px;
     padding: 10px;
-    background-color:white;
+    background-color: white;
     border-radius: 6px;
 }
 #centro{
     text-align: center;
 }
 /* ------  FIN -----------*/
+/*estilo para la imagen de entrada*/
 .image-container{
     width: 100%;
     overflow: hidden;
@@ -177,6 +234,16 @@ p{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra de texto para mejor legibilidad */
     text-align: center;
 }
+.texto{
+    font-family: 'Dancing Script', cursive;
+    font-size: 45px;
+    color: white;
+}
+.texto1{
+    /* color: #333333; */
+    font-size: 18px;
+}
+/* ------  FIN -----------*/
 /*--------estilos para el footer-------------*/
 .piePagina {
     background-color: #222; 
