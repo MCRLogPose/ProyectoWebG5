@@ -91,7 +91,7 @@ a:hover.header {
 /* CUERPO DE IMAGEN DEL VINO*/
 .mesa img{
     width: 100%;
-    height: 950px;
+    height: auto;
 }
 .texto-mesa{
     position: absolute;
@@ -144,12 +144,23 @@ a:hover.header {
     transition: 1.5s;
 }
 /*-------------------FORMULARIO-------------------*/
+.linea {
+    display: inline-block;
+    width: 80px; /* Largo de las líneas */
+    height: 1px;
+    background-color: #B22222; /* Color de las líneas */
+    margin: 0 10px;
+}
+.decoracion{
+    padding: 30px;
+}
 .formulario{
     display: grid;
     grid-template-columns: repeat(1,1fr);
     grid-template-rows: repeat(2,90px);
     justify-items: center;
     margin-top: 15px;
+    margin-bottom: 15px;
 }
 #titulo1{
     color: red;
@@ -158,7 +169,6 @@ a:hover.header {
 }
 #titulo2{
     font-size: 37px;
-    padding: 5px 12px;
 }
 #copas{
     width: 100px;
