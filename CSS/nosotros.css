@@ -1,5 +1,6 @@
 * {
     padding: 0;
+    margin: 0;
 }
 body{
     /* background-color: #f5f5f5; */
@@ -242,93 +243,4 @@ p{
 .texto1{
     /* color: #333333; */
     font-size: 18px;
-}
-/* ------  FIN -----------*/
-/*--------estilos para el footer-------------*/
-.piePagina {
-    background-color: #222; 
-    color: white;
-    padding: 40px 20px;
-    font-size: 14px;
-    line-height: 1.6;
-}
-.group1 {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; /* Hacer que los elementos se ajusten en pantallas pequeñas */
-    margin-bottom: 20px;
-}
-.box {
-    flex: 1;
-    min-width: 250px; /* Asegura que las cajas no sean demasiado pequeñas en pantallas más chicas */
-    padding: 0 20px;
-    text-align: left;
-}
-.box h2 {
-    color: #f9f9f9;
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-.box p {
-    color: #ccc; /* Color de texto más suave */
-    font-size: 14px;
-}
-
-.redSocial {
-    display: flex;
-    gap: 15px; /* Espacio entre los iconos de redes sociales */
-}
-.redSocial a {
-    font-size: 24px;
-    color: white;
-    transition: color 0.3s;
-    text-decoration: none;
-}
-.redSocial a:hover {
-    color: #ddd; /* Cambio de color al pasar el cursor por encima */
-}
-.footerImg {
-    max-width: 200px; /* Ajusta el tamaño del logo */
-}
-.group2 {
-    text-align: center;
-    border-top: 1px solid #444;
-    padding-top: 20px;
-    font-size: 12px;
-    color: #ccc;
-}
-/*--------estilos para el header-------------*/
-header {
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    margin: auto;
-}
-div.header {
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1200px; /* Limita el ancho máximo para pantallas grandes */
-    padding: 0 20px;   /* Espacio lateral */
-}
-img.header {
-    width: 150px;
-    padding-left: 50px;
-}
-a.header {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 500;
-    color: black;
-    font-size: 15px;
-    border: 2px solid transparent;
-    padding: 18px;
-    transition: background-color 0.4s ease;
-}
-a:hover.header {
-    color: rgb(194, 38, 90);
 }

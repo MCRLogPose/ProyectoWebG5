@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
-     crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="../CSS/index.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/plantilla.css">
     <link rel="stylesheet" type="text/css" href="../CSS/productos.css">
 
     <script src="https://kit.fontawesome.com/4a358270b7.js" crossorigin="anonymous"></script>
@@ -17,25 +17,25 @@
 
 <body>
     <header>
-        <div class="header">
-            <img class="header" src="../imagenes/logoImage.png" alt="logo de la bodega">
+        <div class="menu">
+            <img class="menu-img" src="../imagenes/logoImage.png" alt="logo de la bodega">
             <nav>
-                <a class="header" href="../HTML/index.html">Inicio</a>
-                <a class="header" href="../HTML/nosostros.html">Nosotros</a>
-                <a class="header" href="../HTML/productos.html">Productos</a>
-                <a class="header" href="../HTML/contacto.html">Contacto</a>
-                <a class="header" href="../HTML/login.html">Login</a>
-            </nav>
+                <a class="menu-item" href="../HTML/index.html">Inicio</a>
+                <a class="menu-item" href="../HTML/nosostros.html">Nosotros</a>
+                <a class="menu-item" href="../HTML/productos.html">Productos</a>
+                <a class="menu-item" href="../HTML/contacto.html">Contacto</a>
+                <a class="menu-item" href="../HTML/login.html">Login</a>
+            </nav> 
         </div>
     </header>
-    
+
     <!-- Barra de búsqueda -->
     <div class="search-bar">
         <input type="text" id="searchInput" placeholder="Buscar productos..." onkeyup="buscarProducto()">
     </div>
-    
+
     <!-- Estante de productos -->
-    <div  class="product-grid" id="productGrid">
+    <div class="product-grid" id="productGrid">
         <div class="product-item" data-title="vino Borgoña Blanco Seco">
             <a href="#">
                 <img src="../imagenes/vinos-productos/imagen1.jpg" alt="vinos-productos">
@@ -134,16 +134,16 @@
             </a>
         </div>
         <!-- carrito de compra -->
-        <div class="carrito"> 
+        <div class="carrito">
             <div class="header-carrito">
-                <h2 >Tu Carrito</h2>
+                <h2>Tu Carrito</h2>
             </div>
-           
-         <div class="carrito-items">
-            
-         </div>   
 
-        <!--
+            <div class="carrito-items">
+
+            </div>
+
+            <!--
 
         <div class="carrito-items">
             <div class="carrito-item">
@@ -181,17 +181,17 @@
         </div>
     -->
 
-        <div class="carrito-total">
-            <div class="fila">
-                <strong>Tu Total </strong>
-                <span class="carrito-precio-total">
-                    S/65.00
-                </span>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Tu Total </strong>
+                    <span class="carrito-precio-total">
+                        S/65.00
+                    </span>
+                </div>
+                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i></button>
             </div>
-            <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i></button>
         </div>
     </div>
-</div>   
     <footer class="piePagina">
         <div class="group1">
             <div class="box">
@@ -200,8 +200,8 @@
                 </figure>
             </div>
             <div class="box">
-                <h2 id="titleNosotros">Sobre nosotros</h2>
-                <p id="infoNosotros">
+                <h2 id="title-Nosotros">Sobre nosotros</h2>
+                <p id="info-Nosotros">
                     Bodegas y Viñedos Candela SAC fue fundada en 1999 en el distrito de San Juan de Lurigancho,
                     un valle que fue testigo durante la época colonial de la siembra de uva y la producción de vino
                     en las diversas haciendas de este fértil valle de clima y tierras muy ricas.
@@ -217,7 +217,8 @@
             </div>
         </div>
         <div class="group2">
-            <small>&copy; 2024 <b>Bodega y Viñedos Candela</b> - Todos los derechos reservados / Desarrollado por: ING Anónimos</small>
+            <small>&copy; 2024 <b>Bodega y Viñedos Candela</b> - Todos los derechos reservados / Desarrollado por: ING
+                Anónimos</small>
         </div>
     </footer>
 </body>

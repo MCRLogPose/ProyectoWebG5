@@ -7,46 +7,7 @@
 body {
     background-color: white;
 }
-/*--------estilos para el header-------------*/
-header {
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    width: 100%;
-    margin: auto;
-}
-div.header {
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1200px; /* Limita el ancho máximo para pantallas grandes */
-    padding: 0 20px;   /* Espacio lateral */
-}
-img.header {
-    width: 180px;
-    transition: width 0.4s ease; /* Transición para cambio de tamaño */
-}
-nav.header {
-    display: flex;
-    gap: 10px;
-}
-a.header {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: black;
-    font-size: 15px;
-    border: 2px solid transparent;
-    padding: 15px;
-    transition: background-color 0.4s ease;
-}
-a:hover.header {
-    background-color: tomato;
-}
+
 /*--------estilos para el carrusel-------------*/
 .carousel-container {
   width: 100%;
@@ -155,7 +116,6 @@ p {
 /*--------estilos para el cuerpo informativo parte 3-------------*/
 .estante{
     background-color: #f9ffeef7;
-    height: 700px;
 }
 #title-estante{
     color: rgb(194, 38, 90);
@@ -182,102 +142,4 @@ p {
 }
 .item:hover{
     border: 1px solid #ccc;
-}
-/*--------estilos para el footer-------------*/
-.piePagina {
-    background-color: #222; 
-    color: white;
-    padding: 40px 20px;
-    font-size: 14px;
-    line-height: 1.6;
-}
-.group1 {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; /* Hacer que los elementos se ajusten en pantallas pequeñas */
-    margin-bottom: 20px;
-}
-.box {
-    flex: 1;
-    min-width: 250px; /* Asegura que las cajas no sean demasiado pequeñas en pantallas más chicas */
-    padding: 0 20px;
-    text-align: left;
-}
-.box h2 {
-    color: #f9f9f9;
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-.box p {
-    color: #ccc; /* Color de texto más suave */
-    font-size: 14px;
-}
-
-.redSocial {
-    display: flex;
-    gap: 15px; /* Espacio entre los iconos de redes sociales */
-}
-.redSocial a {
-    font-size: 24px;
-    color: white;
-    transition: color 0.3s;
-    text-decoration: none;
-}
-.redSocial a:hover {
-    color: #ddd; /* Cambio de color al pasar el cursor por encima */
-}
-.footerImg {
-    max-width: 200px; /* Ajusta el tamaño del logo */
-}
-.group2 {
-    text-align: center;
-    border-top: 1px solid #444;
-    padding-top: 20px;
-    font-size: 12px;
-    color: #ccc;
-}
-
-/*----- Responsivo para pantallas más pequeñas -----*/
-@media (max-width: 768px) {
-    div.header {
-        flex-direction: column; /* Coloca logo y menú en columna */
-        gap: 20px; /* Reduce el gap entre el logo y el menú */
-    }
-    img.header {
-        width: 150px; /* Redimensiona el logo en pantallas más pequeñas */
-    }
-    nav.header {
-        flex-direction: column; /* Cambia la dirección del menú a columna */
-        align-items: center;
-        gap: 5px; /* Reduce el gap entre los elementos del menú */
-    }
-    a.header {
-        font-size: 14px;
-        padding: 10px;
-    }
-}
-/*----- Ajustes para móviles más pequeños -----*/
-@media (max-width: 480px) {
-    div.header {
-        gap: 10px; /* Aún menos espacio entre logo y menú */
-    }
-    img.header {
-        width: 120px; /* Más pequeño en móviles */
-    }
-    nav.header {
-        gap: 3px; /* Espacio mínimo entre enlaces del menú */
-    }
-    a.header {
-        font-size: 12px; /* Texto más pequeño en enlaces */
-        padding: 8px;
-    }
-}
-/*---------configurar modo responsive--------------*/
-@media screen and (max-width:800px) {
-    .piePagina .group1{
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
-        padding: 35px 0px;
-    }
 }

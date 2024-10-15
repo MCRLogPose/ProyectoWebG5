@@ -1,0 +1,110 @@
+/*--------estilos para el header-------------*/
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px; /* Aumenta el padding para dar más espacio en los bordes */
+    background-color: white;
+    width: 100vw; /* para que el menú abarque todo el ancho de la ventana */
+    height: 100px;
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+/* Estilo para la imagen */
+.menu-img {
+    width: 150px;
+    height: auto;
+    margin-right: auto; /* Empuja la imagen lo más cerca del borde izquierdo */
+}
+
+/* Estilos para los enlaces del menú */
+.menu nav {
+    display: flex;
+    gap: 10px; /* Disminuye el espacio entre los ítems del menú */
+    justify-content: flex-end; /* Alinea los ítems a la derecha */
+    flex-grow: 1; /* El nav ocupa todo el espacio disponible */
+}
+
+.menu-item {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 510;
+    color: black;
+    font-size: 15px;
+    padding: 20px;
+    transition: background-color 0.4s ease;
+}
+
+.menu-item:hover {
+    color: rgb(194, 38, 90);
+}
+
+/* Ajusta la distribución del menú */
+.menu nav .menu-item {
+    padding: 10px 15px;
+    text-align: center;
+}
+
+/*--------estilos para el footer-------------*/
+.piePagina {
+    background-color: #222; 
+    color: white;
+    padding: 40px 20px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.group1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Hacer que los elementos se ajusten en pantallas pequeñas */
+    margin-bottom: 20px;
+}
+.box {
+    flex: 1;
+    min-width: 250px; /* Asegura que las cajas no sean demasiado pequeñas en pantallas más chicas */
+    padding: 0 20px;
+    text-align: left;
+}
+#title-Nosotros {
+    color: #f9f9f9;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+#info-Nosotros {
+    color: #ccc; /* Color de texto más suave */
+    font-size: 14px;
+}
+
+.redSocial {
+    display: flex;
+    gap: 15px; /* Espacio entre los iconos de redes sociales */
+}
+.redSocial a {
+    font-size: 24px;
+    color: white;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+.redSocial a:hover {
+    color: #ddd; /* Cambio de color al pasar el cursor por encima */
+}
+.footerImg {
+    max-width: 200px; /* Ajusta el tamaño del logo */
+}
+.group2 {
+    text-align: center;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    font-size: 12px;
+    color: #ccc;
+}
+
+/*---------configurar modo responsive--------------*/
+@media screen and (max-width:800px) {
+    .piePagina .group1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
