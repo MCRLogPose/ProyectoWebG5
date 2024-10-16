@@ -12,9 +12,10 @@ body{
 /* img{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);    
 } */
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cantata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cantata+One&family=Gilda+Display&display=swap');
 @font-face {
     font-family: 'Qwitcher Grypen';
     src: url('../fonts/QwitcherGrypen-Bold.woff2') format('woff2'),
@@ -39,6 +40,7 @@ h1{
     color: #b22222;
     font-family: monospace;
     text-align: left;
+    /* font-family: 'Cantata One', serif; */
 }
 p{
     font-family:cursive;
@@ -94,7 +96,7 @@ p{
     height: 60px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; /*centrar*/
     margin-bottom: 10px;
     z-index: 1; /* Asegura que los círculos estén por encima de la línea */
   }
@@ -137,7 +139,7 @@ p{
     gap: 20px;
     display: grid;
     max-width: 100%;
-    grid-template-columns: 1fr 1fr;/*misma dimension de columnas*/
+    grid-template-columns: 1fr 1fr; /*misma dimension de columnas*/
     grid-template-rows: auto auto auto auto auto auto; 
     /* background-color: #FAF5EF; */
     background-color: white;
@@ -149,24 +151,31 @@ p{
     align-self: center;
     max-width: 100%;
 }
-
+.Historia{
+    grid-column: 1;
+    grid-row: 2;
+    margin: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 6px;
+}
 .Mision{
-    grid-column: 1 / span 2; /* Ocupa ambas columnas */
-    grid-row: 4; /* Tercera fila */
+    grid-column: 1 / span 2;
+    grid-row: 4; 
     padding: 20px;
     background-color: white;
     border-radius: 6px;
 }
 .Vision{
-    grid-column: 1 / span 2; /* Ocupa ambas columnas */
-    grid-row: 5; /* Cuarta fila */
+    grid-column: 1 / span 2; 
+    grid-row: 5;
     padding: 20px;
     background-color: white;
     border-radius: 6px;
 }
 .Valores{
-    grid-column: 1 / span 2; /* Ocupa ambas columnas */
-    grid-row: 6; /* Quinta fila */
+    grid-column: 1 / span 2; 
+    grid-row: 6;
     padding: 20px;
     background-color: white;
     border-radius: 6px;
@@ -190,7 +199,7 @@ p{
     max-width: 80px; /* Tamaño del icono */
 }
 .tarjeta:hover {
-    transform: translateY(-10px); /* Efecto hover para resaltar las tarjetas */
+    transform: translateY(-10px); /* Efecto para resaltar las tarjetas */
 }
 .tarjeta h3 {
     font-size: 20px;
@@ -201,14 +210,7 @@ p{
     font-size: 16px;
     color: #666;
 }
-.Historia{
-    grid-column: 1;
-    grid-row: 2;
-    margin: 20px;
-    padding: 10px;
-    background-color: white;
-    border-radius: 6px;
-}
+
 #centro{
     text-align: center;
 }
@@ -233,17 +235,42 @@ p{
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra de texto para mejor legibilidad */
     text-align: center;
+
+}
+
+.texto0{
+    font-family: 'Qwitcher Grypen', cursive;
+    text-align: left;
+    font-size: 48px;
+    margin: 0;
 }
 .texto{
-    font-family: 'Dancing Script', cursive;
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: "Cantata One", serif;
     font-size: 45px;
     color: white;
 }
+
 .texto1{
     /* color: #333333; */
-    font-size: 18px;
+    /* font-family: "Cookie", cursive;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 19px; */
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 21px;
+}
+.texto0, .texto1, .texto{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.show {
+    opacity: 1;   
 }
 /* ------  FIN -----------*/
+
 /*--------estilos para el footer-------------*/
 .piePagina {
     background-color: #222; 
