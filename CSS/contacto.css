@@ -1,55 +1,11 @@
-header{
-    display: flex;
-    justify-content: space-between;
-    height: 70px;
-    align-items: center;
-}
-
 * {
+    padding: 0;
+    border: 0;
     font-family: inherit;
+    margin: 0;
 }
 body {
     background-color: white;
-}
-/*--------estilos para el header-------------*/
-header {
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    width: 100%;
-    margin: auto;
-}
-div.header {
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1200px; /* Limita el ancho máximo para pantallas grandes */
-    padding: 0 20px;   /* Espacio lateral */
-}
-img.header {
-    width: 180px;
-    transition: width 0.4s ease; /* Transición para cambio de tamaño */
-}
-nav.header {
-    display: flex;
-    gap: 10px;
-}
-a.header {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: black;
-    font-size: 15px;
-    border: 2px solid transparent;
-    padding: 15px;
-    transition: background-color 0.4s ease;
-}
-a:hover.header {
-    background-color: tomato;
 }
 /*--------------------------FLECHAS--------------------------*/
 .flechas{
@@ -91,7 +47,7 @@ a:hover.header {
 /* CUERPO DE IMAGEN DEL VINO*/
 .mesa img{
     width: 100%;
-    height: 950px;
+    height: auto;
 }
 .texto-mesa{
     position: absolute;
@@ -144,12 +100,23 @@ a:hover.header {
     transition: 1.5s;
 }
 /*-------------------FORMULARIO-------------------*/
+.linea {
+    display: inline-block;
+    width: 80px; /* Largo de las líneas */
+    height: 1px;
+    background-color: #B22222; /* Color de las líneas */
+    margin: 0 10px;
+}
+.decoracion{
+    padding: 30px;
+}
 .formulario{
     display: grid;
     grid-template-columns: repeat(1,1fr);
     grid-template-rows: repeat(2,90px);
     justify-items: center;
     margin-top: 15px;
+    margin-bottom: 15px;
 }
 #titulo1{
     color: red;
@@ -158,7 +125,6 @@ a:hover.header {
 }
 #titulo2{
     font-size: 37px;
-    padding: 5px 12px;
 }
 #copas{
     width: 100px;
