@@ -7,47 +7,32 @@
 body {
     background-color: white;
 }
+.carousel-caption {
+    font-family: cursive;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center; /* Centrar texto */
+    width: 70%;
+  }
 
-/*--------estilos para el carrusel-------------*/
-.carousel-container {
-  width: 100%;
-  max-width: 100%;
-  height: 100%; /* Se ajusta la altura a tus necesidades */
-  overflow: hidden;
-  position: relative;
-  margin-bottom: 20px;
-}
-.carousel-slide {
-  display: flex;
-  transition: transform 0.4s ease-in-out;
-  width: 100%;
-}
-.carousel-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;  /* La imagen se ajustará completamente dentro del contenedor */
-}
-#prevBtn, #nextBtn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  padding: 10px;
-  z-index: 10;
-}
-#prevBtn {
-  left: 10px;
-}
-#nextBtn {
-  right: 10px;
-}
-#prevBtn:hover, #nextBtn:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
+  .carousel-caption h5 {
+    font-size: 30px; /* Tamaño grande para el título */
+    line-height: 3;
+    font-weight: 700; /* Negrita */
+  }
+
+  .carousel-caption p {
+    font-size: 1rem; /* Tamaño del texto descriptivo */
+  }
+
+  .carousel-caption * {
+    line-height: 1.5; /* Separación entre líneas */
+    letter-spacing: 1px; /* Separación entre letras */
+  }
 /*--------estilos para el cuerpo informativo parte 1-------------*/
 .infoCuerpo {
     margin-bottom: 100px;  /* Añade espacio en la parte inferior */
@@ -55,6 +40,7 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 20px;    /* Espacio entre la imagen y el texto */
+    margin-top: 50px;
 }
 .imagen-infobody {
     flex: 1;    /* La imagen ocupará parte del espacio que necesite*/
@@ -75,12 +61,10 @@ body {
 .info-body {
     flex: 2;    /* El texto ocupará 2 partes del espacio */
     max-width: 600px;    /* Ancho máximo del contenedor de texto */
-}
-h2, h3, p, h4 {
-    margin: 10px 0;    /* Espaciado entre los elementos de texto */
     font-family: cursive;
+    margin: 10px 0;
 }
-.info-body h3, h4 {
+#titulos-terceros {
     color: rgb(194, 38, 90);
 }
 /*--------estilos para el cuerpo informativo parte 2-------------*/
@@ -95,6 +79,7 @@ h2, h3, p, h4 {
     flex: 2;    /* El bloque de texto ocupa 2 partes del espacio */
     max-width: 600px;    /* Ancho máximo del contenedor de texto */
     padding-left: 50px;    /* espaciado a la izquierda*/
+    font-family: cursive;
 }
 .imagen-infobody2 {
     flex: 1;    /* El bloque de la imagen ocupa 1 parte del espacio */
@@ -107,15 +92,10 @@ h2, h3, p, h4 {
     width: 100%;    /* La imagen ocupará el 100% de su contenedor */
     height: auto;    /* Mantiene la proporción de la imagen */
 }
-p {
-    margin-bottom: 15px;    /* Espacio entre párrafos */
-}
-.info-body2 h3{
-    color: rgb(194, 38, 90);
-}
 /*--------estilos para el cuerpo informativo parte 3-------------*/
 .estante{
     background-color: #f9ffeef7;
+    font-family: cursive;   
 }
 #title-estante{
     color: rgb(194, 38, 90);

@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../CSS/plantilla.css">
     <link rel="stylesheet" type="text/css" href="../CSS/index.css">
     <script src="https://kit.fontawesome.com/4a358270b7.js" crossorigin="anonymous"></script>
     <!-- Aquí colocas la referencia al archivo index.js -->
-    <script src="../JS/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </head>
-<body> 
+
+<body>
     <header>
         <div class="menu">
             <img class="menu-img" src="../imagenes/logoImage.png" alt="logo de la bodega">
@@ -24,60 +30,107 @@
         </div>
     </header>
     <div class="cuerpo">
-        <div class="carousel-container">
-            <div class="carousel-slide">
-                <!--<img src="../imagenes/carrusel/image4.jpg" id="lastClone" alt="Imagen 4"> <*-- Clon de la última imagen -->
-                <img src="../imagenes/carrusel/image1.jpg" alt="Imagen 1">
-                <img src="../imagenes/carrusel/image2.jpg" alt="Imagen 2">
-                <img src="../imagenes/carrusel/image3.jpg" alt="Imagen 3">
-                <img src="../imagenes/carrusel/image4.jpg" alt="Imagen 4"> <!-- Clon de la primera imagen -->
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../imagenes/carrusel/image1.jpg" class="d-block w-100" alt="Imagen 1">
+                    <div class="carousel-caption">
+                        <h5>Somos Vinos Candela</h5><br>
+                        <p>Candela no es solo una viñeria, es una experiencia. Un espacio cálido y acogedor donde la
+                            pasión por el vino se respira en cada rincón.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../imagenes/carrusel/image2.jpg" class="d-block w-100" alt="Imagen 2">
+                    <div class="carousel-caption">
+                        <h5>Vinos Selectos</h5><br>
+                        <p>Nos define por la pasión por el vino y la búsqueda de la excelencia. Ofrecemos una selección
+                            cuidadosamente curada de vinos selectos, cada uno con su propia historia y personalidad.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../imagenes/carrusel/image3.jpg" class="d-block w-100" alt="Imagen 3">
+                    <div class="carousel-caption">
+                        <h5>En nuestra pasión</h5><br>
+                        <p>Candela no es solo una viñería, es un espacio donde el amor y la pasión se unen en cada copa.
+                            Un lugar donde la magia del vino se fusiona con la intensidad de los sentimientos.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../imagenes/carrusel/image4.jpg" class="d-block w-100" alt="Imagen 4">
+                    <div class="carousel-caption">
+                        <h5>Nuestro valor</h5><br>
+                        <p>Una viñería que invita a detenerse, a saborear el presente y a apreciar los pequeños detalles
+                            que hacen la vida más rica. En Candela, el valor no se limita a la calidad del vino, se
+                            extiende a cada experiencia que se ofrece.</p>
+                    </div>
+                </div>
             </div>
-            <button id="prevBtn">❮</button>
-            <button id="nextBtn">❯</button>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
         </div>
-          
+
         <div class="infoCuerpo">
             <div class="imagen-infobody">
-                <img class="cuerpo" src="../imagenes/info-inicio/imagen1.webp" alt="imagen de info principal">
+                <img class="img-fluid" src="../imagenes/info-inicio/imagen1.webp" alt="imagen de info principal">
             </div>
             <div class="info-body">
-                <h3>Mas Sobre Nosotros</h3>
-                <h2>Bodegas y Viñedos Candela</h2>
-                <p>Bodega y Viñedos Candela S.A.C. continúa con una tradición familiar en una tierra que ha mantenido durante décadas un estrecho vínculo con el vino y la vida.</p><br>
-                <h4>Dirección:</h4>
-                <p>Pasaje Piedras del Sol 1549 Urb. Inca Manco Capac San Juan de Lurigancho</p><br>
-                <h4>Teléfono:</h4>
+                <p class="fw-bold">Mas Sobre Nosotros</p>
+                <p id="titulos-terceros">Bodegas y Viñedos Candela</p>
+                <p class="text-xxl-end">Bodega y Viñedos Candela S.A.C. continúa con una tradición familiar en una
+                    tierra que ha mantenido
+                    durante décadas un estrecho vínculo con el vino y la vida.</p><br>
+                <p class="fw-medium" id="titulos-terceros">Dirección:</p>
+                <p class="text-xxl-end">Pasaje Piedras del Sol 1549 Urb. Inca Manco Capac San Juan de Lurigancho</p><br>
+                <p class="fw-medium" id="titulos-terceros">Teléfono:</p>
                 <p>982671847</p>
             </div>
         </div>
 
         <div class="infoCuerpo2">
             <div class="info-body2">
-                <h3>Conoce más</h3>
-                <p>En Candela cada botella es un testimonio de nuestro compromiso con la calidad, utilizando métodos tradicionales y una fórmula secreta que se transmite de generación en generación</p><br>
-                <h4>Paladares con experiencia</h4>
-                <p>Nuestros vinos ofrecen una complejidad única. Notas de fruta madura, especias y minerales se entrelazan en un baile delicado, revelando la profundidad de la tierra y la maestría del enólogo.</p><br>
+                <p class="fw-medium" id="titulos-terceros">Conoce más</p>
+                <p class="text-xxl-end">En Candela cada botella es un testimonio de nuestro compromiso con la calidad,
+                    utilizando métodos
+                    tradicionales y una fórmula secreta que se transmite de generación en generación</p><br>
+                <p class="fw-medium" id="titulos-terceros">Paladares con experiencia</p>
+                <p class="text-xxl-end">Nuestros vinos ofrecen una complejidad única. Notas de fruta madura, especias y
+                    minerales se
+                    entrelazan en un baile delicado, revelando la profundidad de la tierra y la maestría del enólogo.
+                </p><br>
             </div>
             <div class="imagen-infobody2">
-                <img class="cuerpo2" src="../imagenes/info-inicio/imagen2.jpg" alt="imagen de info principal">
+                <img class="img-fluid" src="../imagenes/info-inicio/imagen2.jpg" alt="imagen de info principal">
             </div>
         </div>
 
         <div class="infoCuerpo">
             <div class="imagen-infobody">
-                <img id="otro-cuerpo" class="cuerpo" src="../imagenes/info-inicio/imagen3.jpg" alt="imagen de info principal">
+                <img class="img-fluid" src="../imagenes/info-inicio/imagen3.jpg" alt="imagen de info principal">
             </div>
+
             <div class="info-body">
-                <h3>Candela te Acompaña</h3>
-                <h4>Publico entuciasta</h4>
-                <p>Si eres nuevo en el mundo del vino, Candela te abre las puertas a un universo de sabores. Te invitamos a explorar nuestras variedades, desde los tintos robustos hasta los blancos frescos y aromáticos.</p><br>
-                <h4>Comprueba y degusta</h4>
-                <p>No dudes en acercarte a nosotros para aprender más sobre el proceso de elaboración, las características de cada variedad y la magia que se esconde detrás de cada etiqueta.</p>
+                <p class="fw-medium" id="titulos-terceros">Candela te Acompaña</p>
+                <p id="titulos-terceros">Publico entuciasta</p>
+                <p class="text-xxl-end">Si eres nuevo en el mundo del vino, Candela te abre las puertas a un universo de
+                    sabores. Te
+                    invitamos a explorar nuestras variedades, desde los tintos robustos hasta los blancos frescos y
+                    aromáticos.</p><br>
+                <p class="fw-medium" id="titulos-terceros">Comprueba y degusta</p>
+                <p class="text-xxl-end">No dudes en acercarte a nosotros para aprender más sobre el proceso de
+                    elaboración, las
+                    características de cada variedad y la magia que se esconde detrás de cada etiqueta.</p>
             </div>
         </div>
 
         <div class="estante">
-            <h3 id="title-estante">Nuestros productos más vendidos</h3>
+            <h5 id="title-estante">Nuestros productos más vendidos</h5>
             <div class="mostrador">
                 <div class="item">
                     <div class="image-oferta">
@@ -108,7 +161,7 @@
                 </div>
                 <div class="item">
                     <div class="image-oferta">
-                        <a  id="item-selec" href="#">
+                        <a id="item-selec" href="#">
                             <img src="../imagenes/vinos-top/borTintoSemiseco.png" alt="vino tinto semiseco">
                             <p class="descripcion">Vino Borgoña Tinto Semiseco</p>
                             <span class="precio">S/ 20.00</span>
@@ -143,8 +196,10 @@
             </div>
         </div>
         <div class="group2">
-            <small>&copy; 2024 <b>Bodega y Viñedos Candela</b> - Todos los derechos reservados / Desarrollado por: ING Anónimos</small>
+            <small>&copy; 2024 <b>Bodega y Viñedos Candela</b> - Todos los derechos reservados / Desarrollado por: ING
+                Anónimos</small>
         </div>
-    </footer>    
+    </footer>
 </body>
+
 </html>
