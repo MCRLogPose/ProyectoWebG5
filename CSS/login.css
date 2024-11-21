@@ -43,95 +43,141 @@ a:hover{
     color: black;
 }
 /*------------FORMULARIO------------*/
-.formulario{
+.formulario {
     display: flex;
     justify-content: center;
+    margin-top: 5px;
 }
-form{
+
+form {
     display: flex;
     flex-direction: column;
-    padding: 50px;
-    background: linear-gradient(150deg,rgb(35, 35, 100) 5%,rgb(94, 46, 94) 30%, rgb(94, 46, 94) 70%, rgb(29, 25, 25) 95%);
-    border-radius: 25px;
-    width: 420px;
+    padding: 40px;
+    background: linear-gradient(135deg, #232367 5%, #5E2E5E 70%, #1D1919 95%);
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombra para darle profundidad */
+    width: 450px;
+    color: white;
 }
-.registro{
+
+.registro {
     display: flex;
     justify-content: center;
-    color: rgb(255, 0, 0);
-    margin-bottom: 30px;
+    color: #ff4d4d;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
-.caja{
-    border-radius: 15px;
-    padding: 17px;
-    border: 1px solid red;
-    margin-bottom: 30px;
-    background-color: transparent;
+
+.caja {
+    border-radius: 12px;
+    padding: 15px;
+    border: 1px solid #ff4d4d;
+    margin-bottom: 25px;
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
     color: white;
     outline: none;
+    transition: border 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
 }
-#fecha{
-    border-radius: 15px;
-    padding: 17px;
-    border: 1px solid red;
-    margin-bottom: 30px;
-    background-color: transparent;
-    outline: none;
-    font-size: 15px;
+
+.caja:focus {
+    border-color: #f5426c;
+    box-shadow: 0 0 8px rgba(245, 66, 108, 0.8); /* Resaltar al enfocar */
 }
-#genero{
-    border-radius: 15px;
-    padding: 15px 10px;
-    border: 1px solid red;
-    margin-bottom: 30px;
-    background-color: transparent;
+
+#fecha {
+    border-radius: 12px;
+    padding: 15px;
+    border: 1px solid #ff4d4d;
+    margin-bottom: 25px;
+    background-color: rgba(255, 255, 255, 0.1);
     outline: none;
-    color: black;
+    font-size: 14px;
+    color: white;
+}
+
+#genero {
+    border-radius: 12px;
+    padding: 12px;
+    border: 1px solid #ff4d4d;
+    margin-bottom: 25px;
+    background-color: rgba(255, 255, 255, 0.1);
+    outline: none;
+    color: white;
     appearance: none;
-    backface-visibility: none;
+    cursor: pointer;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
 }
-#opcion{
-    background-color: orange;
+
+#genero:focus {
+    border-color: #f5426c;
+    box-shadow: 0 0 8px rgba(245, 66, 108, 0.8);
 }
-.formulario-todo{
-    background-color: transparent;
-}
-#texto{
+
+#opcion {
+    background-color: #ff8000;
     color: white;
 }
+
+.formulario-todo {
+    background-color: transparent;
+}
+
+#texto {
+    color: white;
+    font-weight: 600;
+}
+
 body {
-    background: linear-gradient(150deg, rgb(241, 222, 183) 1%, rgb(230, 213, 213) 10%, rgb(186, 214, 197) 20%,rgb(231, 245, 238) 50%, rgb(189, 211, 198) 75%, rgb(241, 222, 183) 90%);
+    background: linear-gradient(150deg, #f1deb7 1%, #e6d5d5 10%, #bac6c5 20%, #e7f5ee 50%, #b6d3c6 75%, #f1deb7 90%);
     margin: 0;
     padding: 0 150px;
+    font-family: Arial, sans-serif;
 }
-#ocupacion-texto{
-    font-size: 20px;
+
+#ocupacion-texto {
+    font-size: 18px;
     color: white;
+    margin-bottom: 10px;
 }
-#cajon{
+
+#cajon {
     display: flex;
     justify-content: left;
-    font-size: 20px;
+    font-size: 16px;
     gap: 15px;
+    margin-bottom: 20px;
 }
-.btn{
-    justify-items: space-between;
-    color: black;
-    border-radius: 25px;
-    padding: 15px 65px;
+
+.btn {
+    justify-items: center;
+    color: white;
+    border-radius: 20px;
+    padding: 12px 50px;
     background-color: #e53854;
     border: 2px solid #E53854;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
 }
-::placeholder{
-    color: #89879B;
+
+.btn:hover {
+    background-color: #f5426c;
+    border: 2px solid #f5426c;
+    transform: scale(1.05); /* Efecto de agrandamiento al pasar el cursor */
 }
-.btn:hover{
-    background-color: #f33f5a;
-    border: 2px solid #f33f5a;
+
+::placeholder {
+    color: #cfcfcf;
+    font-style: italic;
 }
-.formu{
+
+.formu {
     background-color: transparent;
     display: flex;
     justify-content: center;
-    gap: 55px;
+    gap: 40px;
 }
+
