@@ -1,8 +1,4 @@
-* {
-    padding: 0;
-    margin: 0;
-    font-family: inherit;
-}
+
 /*--------estilos para el header-------------*/
 img {
     width: 120px;
@@ -42,142 +38,149 @@ a:hover{
     text-align: center;
     color: black;
 }
-/*------------FORMULARIO------------*/
-.formulario {
-    display: flex;
-    justify-content: center;
-    margin-top: 5px;
-}
 
-form {
-    display: flex;
-    flex-direction: column;
-    padding: 40px;
-    background: linear-gradient(135deg, #232367 5%, #5E2E5E 70%, #1D1919 95%);
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombra para darle profundidad */
-    width: 450px;
-    color: white;
-}
-
-.registro {
-    display: flex;
-    justify-content: center;
-    color: #ff4d4d;
-    font-size: 1.2em;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-
-.caja {
-    border-radius: 12px;
-    padding: 15px;
-    border: 1px solid #ff4d4d;
-    margin-bottom: 25px;
-    background-color: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
-    color: white;
-    outline: none;
-    transition: border 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
-}
-
-.caja:focus {
-    border-color: #f5426c;
-    box-shadow: 0 0 8px rgba(245, 66, 108, 0.8); /* Resaltar al enfocar */
-}
-
-#fecha {
-    border-radius: 12px;
-    padding: 15px;
-    border: 1px solid #ff4d4d;
-    margin-bottom: 25px;
-    background-color: rgba(255, 255, 255, 0.1);
-    outline: none;
-    font-size: 14px;
-    color: white;
-}
-
-#genero {
-    border-radius: 12px;
-    padding: 12px;
-    border: 1px solid #ff4d4d;
-    margin-bottom: 25px;
-    background-color: rgba(255, 255, 255, 0.1);
-    outline: none;
-    color: white;
-    appearance: none;
-    cursor: pointer;
-    transition: border 0.3s ease, box-shadow 0.3s ease;
-}
-
-#genero:focus {
-    border-color: #f5426c;
-    box-shadow: 0 0 8px rgba(245, 66, 108, 0.8);
-}
-
-#opcion {
-    background-color: #ff8000;
-    color: white;
-}
-
-.formulario-todo {
-    background-color: transparent;
-}
-
-#texto {
-    color: white;
-    font-weight: 600;
-}
-
-body {
-    background: linear-gradient(150deg, #f1deb7 1%, #e6d5d5 10%, #bac6c5 20%, #e7f5ee 50%, #b6d3c6 75%, #f1deb7 90%);
+*{
+    padding: 0;
     margin: 0;
-    padding: 0 150px;
-    font-family: Arial, sans-serif;
+    box-sizing: border-box;
 }
-
-#ocupacion-texto {
-    font-size: 18px;
-    color: white;
-    margin-bottom: 10px;
-}
-
-#cajon {
-    display: flex;
-    justify-content: left;
-    font-size: 16px;
-    gap: 15px;
-    margin-bottom: 20px;
-}
-
-.btn {
+body{
     justify-items: center;
-    color: white;
-    border-radius: 20px;
-    padding: 12px 50px;
-    background-color: #e53854;
-    border: 2px solid #E53854;
-    font-size: 1.1em;
-    font-weight: bold;
-    text-align: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
 }
 
-.btn:hover {
-    background-color: #f5426c;
-    border: 2px solid #f5426c;
-    transform: scale(1.05); /* Efecto de agrandamiento al pasar el cursor */
-}
-
-::placeholder {
-    color: #cfcfcf;
-    font-style: italic;
-}
-
-.formu {
-    background-color: transparent;
+/*----------------IZQUIERDA----------------*/
+.container-form{
     display: flex;
-    justify-content: center;
-    gap: 40px;
+    border-radius: 20px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.6);
+    height: 500px;
+    max-width: 900px;
+    transition: all 1s ease;
+}
+.information{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #b0d5da;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.info-childs{
+    width: 100%;
+    padding: 0 30px;
+}
+.info-childs img{
+    width: 160px;
+    height: 50px;
+}
+.info-childs h2{
+    font-size: 35px;
+    color: #4f438f;
+}
+.info-childs p{
+    color: #555555;
+    font-size: 25px;
+}
+.info-childs input{
+    background-color: transparent;
+    outline: none;
+    border: 2px solid #9191bd;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #9191bd;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.info-childs input:hover{
+    transition: 0.4s;
+    background-color: #9191bd;
+    border: none;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/*----------------DERECHA----------------*/
+.form-information{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #dfdbdb;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.form-information-childs{
+    padding: 0 30px;
+}
+.form-information-childs h2{
+    color: #333;
+    font-size: 2rem;
+}
+.form-information-childs p{
+    color: #555;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.icons{
+    margin: 15px 0;
+}
+.icons i{
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    margin: 0 10px;
+    color: #9191bd;
+    border: 1px solid #9191bd;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.icons i:hover{
+    background-color: #c7c7f3;
+    color: #fff;
+}
+.form{
+    margin: 30px 0 0 0;
+}
+.form-information-childs form label{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding: 0 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-information-childs form label input{
+    width: 100%;
+    padding: 8px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: #333;
+    cursor: pointer;
+}
+
+.form-information-childs form input{
+    background-color: #919191bd;
+    color: #fff;
+    border-radius: 20px;
+    border-color: rgb(173, 173, 173);
+    padding: 15px 12px;
+    cursor: pointer;
+}
+
+
+#reg:hover{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: rgb(20, 6, 6);
+    border-color: rgb(124, 126, 247);
+    background-color: rgb(169, 170, 247);
+}
+#error{
+    position: absolute;
+    color: red;
+}

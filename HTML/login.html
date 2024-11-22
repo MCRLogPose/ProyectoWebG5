@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
     <link rel="stylesheet" href="../CSS/login.css" type="text/css">
+    <script language="javascript" type="text/javascript" src="../JS/login.js"></script>
+    <title>Registro de Datos</title>
 </head>
-<body>
+<body onload="saludo()">
     <header>
         <div class="header">
             <nav>
@@ -18,46 +20,45 @@
             </nav>
         </div>
     </header>
-
-    <div class="formulario-todo">
-        <div class="formulario">
-            <form action="">
-                <h2  class="registro">REGISTRO</h2>
-                <div id="texto" >DATOS:</div><br>
-                <input class="caja" type="text" name="nombre" placeholder="Nombre*">
-                <input class="caja" type="text" name="apellido" placeholder="Apellido Paterno*">
-                <input class="caja" type="text" name="apellido" placeholder="Apellido Materno*">
-                <input class="caja" type="number" name="dni" placeholder="DNI*">
-                <input class="caja" type="email" name="correo" placeholder="Email*">
-                <input class="caja" type="number"name="telefono" placeholder="Numero de celular*">
-                <input class="caja" type="text" name="contraseña" placeholder="Contraseña*">
-                <input class="caja" type="text" name=" conf contraseña" placeholder="Confirmar Contraseña*">
-                <div id="ocupacion-texto">Soy mayor de Edad:</div><br>
-                <div id="cajon">
-                    <input type="radio" name="mayor">Si
-                    <input type="radio" name="mayor">No
+    <div class="container-form register">
+        <div class="information">
+            <div class="info-childs">
+                <h2>Bienvenidos <br> a <br> Bidega y Viñedos Candela</h2><br>
+                <p>Para unirte a nuestra comunidad ingrese sus datos</p><br>
+                <br><img src="../imagenes/logoImage.png" alt="logo candela">
+            </div>
+        </div>
+        <div class="form-information">
+            <div class="form-information-childs">
+                <h2>Crear una cuenta</h2>
+                <div class="icons">
+                    <i class='bx bxl-facebook'></i>
+                    <i class='bx bxl-whatsapp' ></i>
+                    <i class='bx bxl-instagram' ></i>
                 </div>
-                <br><br>
-                <div>
-                    <div id="texto">Fecha de Nacimiento:</div><br>
-                    <input id="fecha" type="date" name="fecha">
-                    <div id="texto">Género</div><br>
-                    <select id="genero" name="sexo">
-                        <option id="opcion" value="seleccion" disabled selected>-------seleccionar-------</option>
-                        <option id="opcion" value="hombre">Hombre</option>
-                        <option id="opcion" value="mujer">Mujer</option>
-                        <option id="opcion" value="otros">Otros</option>
-                    </select>
-                <div class="formu">
-                    <input class="btn" type="reset" value="Limpiar"><input class="btn" type="submit" value="Registrar">
-                </div>
-            </form>
-        </div> 
+                <p>Ingrese para obtener beneficios y promociones</p>
+                <form name="form1" novalidate>
+                    <label>
+                        <i class='bx bx-user' ></i>
+                        <input type="text" name="usuario" value="" placeholder="Nombre" >
+                    </label>
+                    <label>
+                        <i class='bx bx-envelope' ></i>
+                        <input type="email" name="email" placeholder="Correo Electrónico">
+                    </label>
+                    <label>
+                        <i class='bx bx-lock-alt' ></i>
+                        <input type="password" name="password" placeholder="Contraseña" >
+                    </label>
+                    <input id="reg" onclick="validar_usuarios()" type="button" value="Registrarse">
+                </form>
+            </div>
+        </div>
     </div>
     <footer class="piePagina"> 
-       <div class="group2">
-            <small>&copy;2024 <b>Bodega y veñedos Candela</b> - Todos los derechos reservados / Desarrollado por: ING Anonimos</small>
-        </div>   
-    </footer>
+        <div class="group2">
+             <small>&copy;2024 <b>Bodega y veñedos Candela</b> - Todos los derechos reservados / Desarrollado por: ING Anonimos</small>
+         </div>   
+     </footer>
 </body>
 </html>
