@@ -28,11 +28,9 @@ a.header {
     padding: 15px;
     transition: background-color 0.4s ease;
 }
-a:hover{
-    background-color: tomato;
-}
+
 /*--------------------FOOTER--------------------*/
-.piePagina .group2{
+.piePagina1 .group2{
     background-color: transparent;
     padding: 15px 10px;
     text-align: center;
