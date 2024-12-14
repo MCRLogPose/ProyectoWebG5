@@ -113,7 +113,7 @@
   }
 
   .carousel-caption h5 {
-    font-size: 30px; /* Tamaño grande para el título */
+    font-size: 2rem; /* Tamaño grande para el título */
     line-height: 3;
     font-weight: 700; /* Negrita */
     color: rgb(194, 38, 90);

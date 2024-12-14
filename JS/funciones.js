@@ -70,7 +70,7 @@ function actualizarTotalCarrito() {
     let total = Array.from(carritoItems).reduce((suma, item) => {
         const precio = parseFloat(item.querySelector('.carrito-item-precio').innerText.replace('S/', '').trim());
         const cantidad = parseInt(item.querySelector('.carrito-item-cantidad').value);
-        return suma + precio * cantidad; // Sumamos el precio total por cantidad al acumulador
+        return suma + precio * cantidad; // Sumamos el precio total por cantidad al acumulador  
     }, 0);
 
     // Actualizamos el total redondeado en el DOM
@@ -86,8 +86,6 @@ function actualizarTotalCarrito() {
 function sumarCantidad(event) {
     const cantidadElemento = event.target.parentElement.querySelector('.carrito-item-cantidad');
     cantidadElemento.value = parseInt(cantidadElemento.value) + 1; // Incrementamos y actualizamos directamente
-
-
     // Actualizamos el total del carrito
     actualizarTotalCarrito();
 }
@@ -115,8 +113,9 @@ function agregarItemAlCarrito(titulo, precio, imagenSrc) {
     const itemsCarrito = document.querySelector('.carrito-items');
     
     // Verificar si el producto ya está en el carrito
-    if ([...itemsCarrito.querySelectorAll('.carrito-item-titulo')].some(item => item.innerText === titulo)) {
+    if ([...itemsCarrito.querySelectorAll('.carrito-item-titulo')].some(item => item.innerText.toLowerCase() === titulo.toLowerCase())) {
         alert("El item ya se encuentra en el carrito");
+        actualizarTotalCarrito();
         return;
     }
 
@@ -149,6 +148,7 @@ function agregarItemAlCarrito(titulo, precio, imagenSrc) {
     // Mostrar el carrito
     hacerVisibleCarrito();
 }
+
 
 function pagarClicked(event){
     alert('Gracias por su compra');
